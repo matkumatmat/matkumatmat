@@ -13,45 +13,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. **Vaccine Stock Control
 
 Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet elit eros a sapien. Curabitur at varius purus, quis luctus augue. Proin et magna a nisl tincidunt consequat. Nulla facilisi. Donec vel semper velit — intinya gue suka ngulik **system architecture** dari level hardware (thermal printer, temp logger) sampai software (data analysis, WMS).
 
-> *Bagian ini lorem ipsum sengaja — lu tinggal ganti dengan cerita background beneran lu. Paft sengaja kasih timeline di bawah biar lu tinggal timpa.*
-
----
-
-### Timeline
-
-```
-2023-11-11  ── join GitHub (matkumatmat)
-            │  first repos: PBF, ZPL-label experiments
-            │
-2024        ── Python era
-            │  • muscle-wiki-scraper, RESTful POS APIs
-            │  • zpl_label, auto_typist
-            │
-2025-07     ── PBF blitz ⚡
-            │  • v1-fullstack-PBF (FastAPI + TS — 30 commits)
-            │  • v1-inventory_control, labeling, kaayeey-sides
-            │  • marketplace-autoparts (TS)
-            │
-2025-10     ── GsLibraries, next-dashboard
-            │
-2026-03     ── k-plugin-skills-claude-code ⭐
-            │  meta-skill framework (TDD, templates)
-            │
-2026-04     ── gzebra-pbf lahir (Go) 🚀
-            │  Go bridge → Zebra ZPL/TCP, DDD, cron retry
-            │  shipped as pbf-bridge.exe — dipakai di alur PBF beneran
-            │
-2026-06     ── paffcode-ai (private, 53MB TS) — flagship hidden
-            │
-2026-08     ── Rust pivot 🦀
-            │  • berusty, pxxxstore, fckode, serverr
-            │  • rq (tokio + sqlx), slack-clone (fullstack)
-            │
-2026-09-05  ── profile README fastfetch SVG live ✨
-            │  next: polish v1-fullstack README + public-kan paffcode-ai
-            └─ ...
-```
-
 ---
 
 ### Featured
