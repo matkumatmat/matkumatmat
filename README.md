@@ -1,72 +1,9 @@
-<div style="background:#0d1117;border:1px solid #21262d;border-radius:8px;padding:20px 22px;font-family:JetBrains Mono,ui-monospace,monospace;">
-
-<table style="width:100%;border-collapse:collapse;border:none;">
-<tr>
-<td style="width:38%;vertical-align:top;border:none;padding:0 18px 0 0;">
-
-<pre style="margin:0;color:#1793D1;line-height:1.28;font-size:12.5px;white-space:pre;overflow:visible;background:transparent;border:none;">
-                  -`
-                 .o+`
-                `ooo/
-               `+oooo:
-              `+oooooo:
-              -+oooooo+:
-            `/:-:++oooo+:
-           `/++++/+++++++:
-          `/++++++++++++++:
-         `/+++ooooooooooooo/`
-        ./ooosssso++osssssso+`
-       .oossssso-````/ossssss+`
-      -osssssso.      :ssssssso.
-     :osssssss/        osssso+++.
-    /ossssssss/        +ssssooo/-
-  `/ossssso+/:-        -:/+osssso+-
- `+sso+:-`                 `.-/+oso:
-`++:.                           `-/+/
-.`                                 `/
-</pre>
-
-</td>
-<td style="width:62%;vertical-align:top;border:none;padding:0;border-left:1px solid #21262d;padding-left:18px;">
-
-<div style="font-size:13px;line-height:1.55;white-space:pre-wrap;word-break:break-word;">
-
-<span style="color:#7ee787;font-weight:700;">matkumatmat</span>
-<span style="color:#5a5a5a;">-------------------</span>
-<span style="color:#00BFFF;">OS</span><span style="color:#ffffff">: Arch Linux</span>
-<span style="color:#00BFFF;">Host</span><span style="color:#ffffff">: PT Bio Farma (Persero)</span>
-<span style="color:#00BFFF;">Kernel</span><span style="color:#ffffff">: 6.18.3-arch1-1</span>
-<span style="color:#00BFFF;">Uptime</span><span style="color:#ffffff">: 2 years, 9 months, 29 days (1029 days)</span>
-<span style="color:#00BFFF;">Packages</span><span style="color:#ffffff">: 51 repos (45 public) | Stars: 1</span>
-<span style="color:#00BFFF;">Shell</span><span style="color:#ffffff">: zsh 5.9</span>
-<span style="color:#00BFFF;">WM</span><span style="color:#ffffff">: Hyprland / GNOME</span>
-<span style="color:#00BFFF;">Terminal</span><span style="color:#ffffff">: kitty / tmux</span>
-<span style="color:#00BFFF;">IDE</span><span style="color:#ffffff">: VSCode 1.108.0, Neovim 0.11.6</span>
-
-<span style="color:#00BFFF;">Languages.Programming</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">Python</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">Rust</span><span style="color:#ff7b72;">]</span>
-<span style="color:#00BFFF;">Languages.Real</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">Indonesian</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">English</span><span style="color:#ff7b72;">]</span>
-
-<span style="color:#00BFFF;">Hobbies.Software</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">data analysis</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">learning system arch</span><span style="color:#ff7b72;">]</span>
-<span style="color:#00BFFF;">Hobbies.Hardware</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">configuring work hardware</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">thermal printer</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">temp logger</span><span style="color:#ff7b72;">]</span>
-
-<span style="color:#ff7b72;">─ Contact ─</span>
-<span style="color:#00BFFF;">Email.Personal[0]</span><span style="color:#ffffff">: </span><a href="mailto:mamattewahyu@gmail.com" style="color:#58a6ff;text-decoration:none;">mamattewahyu@gmail.com</a>
-<span style="color:#00BFFF;">Email.Personal[1]</span><span style="color:#ffffff">: </span><a href="mailto:rahmat.oz.es@gmail.com" style="color:#58a6ff;text-decoration:none;">rahmat.oz.es@gmail.com</a>
-<span style="color:#00BFFF;">LinkedIn</span><span style="color:#ffffff">: </span><a href="https://www.linkedin.com/in/rahmatwahyuillahi/" style="color:#58a6ff;text-decoration:none;">linkedin.com/in/rahmatwahyuillahi</a>
-<span style="color:#00BFFF;">GitHub</span><span style="color:#ffffff">: </span><a href="https://github.com/matkumatmat" style="color:#58a6ff;text-decoration:none;">github.com/matkumatmat</a>
-<span style="color:#00BFFF;">Instagram</span><span style="color:#ffffff">: </span><a href="https://instagram.com/kayeeeey" style="color:#58a6ff;text-decoration:none;">@kayeeeey</a>
-<span style="color:#00BFFF;">TikTok</span><span style="color:#ffffff">: </span><a href="https://tiktok.com/@kaayeeyyy" style="color:#58a6ff;text-decoration:none;">@kaayeeyyy</a>
-
-<span style="color:#5a5a5a;">Active.Work: PT Bio Farma — Vaccine Stock Control (informal IT Support, Seksi PBF)</span>
-</div>
-
-</td>
-</tr>
-</table>
-
-</div>
-
-> **Logo literal** `fastfetch-cli/fastfetch@dev/src/logo/ascii/a/arch.txt` — 2-col table persis terminal, bukan span rata.
+<a href="https://github.com/matkumatmat/matkumatmat">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/matkumatmat/matkumatmat/main/dark_mode.svg">
+    <img alt="matkumatmat's GitHub Profile — fastfetch Arch" src="https://raw.githubusercontent.com/matkumatmat/matkumatmat/main/light_mode.svg">
+  </picture>
+</a>
 
 ---
 
@@ -110,7 +47,7 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
             │  • berusty, pxxxstore, fckode, serverr
             │  • rq (tokio + sqlx), slack-clone (fullstack)
             │
-2026-09-05  ── profile README fastfetch literal live ✨
+2026-09-05  ── profile README fastfetch SVG live ✨
             │  next: polish v1-fullstack README + public-kan paffcode-ai
             └─ ...
 ```
@@ -138,3 +75,7 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
   <img src="https://img.shields.io/badge/Neovim-57A143?style=flat&logo=neovim&logoColor=white" />
   <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" />
 </p>
+
+---
+
+<sub>Terminal card is SVG — <code>dark_mode.svg</code> / <code>light_mode.svg</code> (985×530) generated from <code>fastfetch-cli/fastfetch/src/logo/ascii/a/arch.txt</code> + <code>today.py</code>. Auto-updated daily via <code>.github/workflows/build.yaml</code> (cron 04:00 UTC). Inspirasi: <a href="https://github.com/Andrew6rant/Andrew6rant">Andrew6rant</a></sub>
