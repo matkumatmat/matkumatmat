@@ -1,24 +1,72 @@
-<pre style="background:#0d1117;color:#c9d1d9;padding:18px 20px;border-radius:8px;line-height:1.35;font-size:13px;overflow-x:auto;white-space:pre;font-family:JetBrains Mono, ui-monospace, monospace;border:1px solid #21262d;"><span style="color:#1793D1">                  -`</span>   <span style="color:#00BFFF;font-weight:600">matkumatmat@biofarma</span>
-<span style="color:#1793D1">                 .o+`</span>   <span style="color:#5a5a5a">-------------------</span>
-<span style="color:#1793D1">                `ooo/</span>   <span style="color:#00BFFF">OS</span><span style="color:#ffffff">: Arch Linux</span>
-<span style="color:#1793D1">               `+oooo:</span>   <span style="color:#00BFFF">Host</span><span style="color:#ffffff">: PT Bio Farma (Persero)</span>
-<span style="color:#1793D1">              `+oooooo:</span>   <span style="color:#00BFFF">Kernel</span><span style="color:#ffffff">: 6.18.3-arch1-1</span>
-<span style="color:#1793D1">              -+oooooo+:</span>   <span style="color:#00BFFF">Uptime</span><span style="color:#ffffff">: 2 years, 9 months, 29 days (1029 days)</span>
-<span style="color:#1793D1">            `/:-:++oooo+:</span>   <span style="color:#00BFFF">Packages</span><span style="color:#ffffff">: 51 repos (45 public) | Stars: 1</span>
-<span style="color:#1793D1">           `/++++/+++++++:</span>   <span style="color:#00BFFF">Shell</span><span style="color:#ffffff">: zsh 5.9</span>
-<span style="color:#1793D1">          `/++++++++++++++:</span>   <span style="color:#00BFFF">WM</span><span style="color:#ffffff">: Hyprland / GNOME</span>
-<span style="color:#1793D1">         `/+++o</span><span style="color:#ffffff">oooooooo</span><span style="color:#1793D1">oooo/`</span>   <span style="color:#00BFFF">Terminal</span><span style="color:#ffffff">: kitty / tmux</span>
-<span style="color:#1793D1">        ./</span><span style="color:#ffffff">ooosssso++osssssso</span><span style="color:#1793D1">+`</span>   <span style="color:#00BFFF">IDE</span><span style="color:#ffffff">: VSCode 1.108.0, Neovim 0.11.6</span>
-<span style="color:#ffffff">       .oossssso-````/ossssss+`</span>   <span style="color:#00BFFF">Languages.Programming</span><span style="color:#ffffff">: Python, Rust</span>
-<span style="color:#1793D1">      -osssssso.      :ssssssso.</span>   <span style="color:#00BFFF">Languages.Real</span><span style="color:#ffffff">: Indonesian, English</span>
-<span style="color:#1793D1">     :osssssss/        osssso+++.</span>   <span style="color:#00BFFF">Hobbies.Software</span><span style="color:#ffffff">: data analysis, learning system arch</span>
-<span style="color:#1793D1">    /ossssssss/        +ssssooo/-</span>   <span style="color:#00BFFF">Hobbies.Hardware</span><span style="color:#ffffff">: configuring work hardware</span>
-<span style="color:#1793D1">  `/ossssso+/:-        -:/+osssso+-</span>   <span style="color:#ffffff">                    (thermal printer, temp logger)</span>
-<span style="color:#1793D1"> `+sso+:-`                 `.-/+oso:</span>   <span style="color:#00BFFF">Contact</span><span style="color:#ffffff">: mamattewahyu@gmail.com | rahmat.oz.es@gmail.com</span>
-<span style="color:#1793D1">`++:.                           `-/+/</span>   <span style="color:#00BFFF">LinkedIn</span><span style="color:#ffffff">: linkedin.com/in/rahmatwahyuillahi</span>
-<span style="color:#1793D1">.`                                 `/</span>   <span style="color:#00BFFF">GitHub</span><span style="color:#ffffff">: github.com/matkumatmat  ·  Instagram: @kayeeeey  ·  TikTok: @kaayeeyyy</span></pre>
+<div style="background:#0d1117;border:1px solid #21262d;border-radius:8px;padding:20px 22px;font-family:JetBrains Mono,ui-monospace,monospace;">
 
-> **Logo = Arch fastfetch literal** `src/logo/ascii/a/arch.txt` dari `fastfetch-cli/fastfetch@dev` — bukan custom gepeng. Warna `#1793D1` (Arch cyan). **Host** = active work lu, **Kernel** = `uname -r`.
+<table style="width:100%;border-collapse:collapse;border:none;">
+<tr>
+<td style="width:38%;vertical-align:top;border:none;padding:0 18px 0 0;">
+
+<pre style="margin:0;color:#1793D1;line-height:1.28;font-size:12.5px;white-space:pre;overflow:visible;background:transparent;border:none;">
+                  -`
+                 .o+`
+                `ooo/
+               `+oooo:
+              `+oooooo:
+              -+oooooo+:
+            `/:-:++oooo+:
+           `/++++/+++++++:
+          `/++++++++++++++:
+         `/+++ooooooooooooo/`
+        ./ooosssso++osssssso+`
+       .oossssso-````/ossssss+`
+      -osssssso.      :ssssssso.
+     :osssssss/        osssso+++.
+    /ossssssss/        +ssssooo/-
+  `/ossssso+/:-        -:/+osssso+-
+ `+sso+:-`                 `.-/+oso:
+`++:.                           `-/+/
+.`                                 `/
+</pre>
+
+</td>
+<td style="width:62%;vertical-align:top;border:none;padding:0;border-left:1px solid #21262d;padding-left:18px;">
+
+<div style="font-size:13px;line-height:1.55;white-space:pre-wrap;word-break:break-word;">
+
+<span style="color:#7ee787;font-weight:700;">matkumatmat</span>
+<span style="color:#5a5a5a;">-------------------</span>
+<span style="color:#00BFFF;">OS</span><span style="color:#ffffff">: Arch Linux</span>
+<span style="color:#00BFFF;">Host</span><span style="color:#ffffff">: PT Bio Farma (Persero)</span>
+<span style="color:#00BFFF;">Kernel</span><span style="color:#ffffff">: 6.18.3-arch1-1</span>
+<span style="color:#00BFFF;">Uptime</span><span style="color:#ffffff">: 2 years, 9 months, 29 days (1029 days)</span>
+<span style="color:#00BFFF;">Packages</span><span style="color:#ffffff">: 51 repos (45 public) | Stars: 1</span>
+<span style="color:#00BFFF;">Shell</span><span style="color:#ffffff">: zsh 5.9</span>
+<span style="color:#00BFFF;">WM</span><span style="color:#ffffff">: Hyprland / GNOME</span>
+<span style="color:#00BFFF;">Terminal</span><span style="color:#ffffff">: kitty / tmux</span>
+<span style="color:#00BFFF;">IDE</span><span style="color:#ffffff">: VSCode 1.108.0, Neovim 0.11.6</span>
+
+<span style="color:#00BFFF;">Languages.Programming</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">Python</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">Rust</span><span style="color:#ff7b72;">]</span>
+<span style="color:#00BFFF;">Languages.Real</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">Indonesian</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">English</span><span style="color:#ff7b72;">]</span>
+
+<span style="color:#00BFFF;">Hobbies.Software</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">data analysis</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">learning system arch</span><span style="color:#ff7b72;">]</span>
+<span style="color:#00BFFF;">Hobbies.Hardware</span><span style="color:#ffffff">: </span><span style="color:#ff7b72;">[</span><span style="color:#ffffff;">configuring work hardware</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">thermal printer</span><span style="color:#5a5a5a;">, </span><span style="color:#ffffff;">temp logger</span><span style="color:#ff7b72;">]</span>
+
+<span style="color:#ff7b72;">─ Contact ─</span>
+<span style="color:#00BFFF;">Email.Personal[0]</span><span style="color:#ffffff">: </span><a href="mailto:mamattewahyu@gmail.com" style="color:#58a6ff;text-decoration:none;">mamattewahyu@gmail.com</a>
+<span style="color:#00BFFF;">Email.Personal[1]</span><span style="color:#ffffff">: </span><a href="mailto:rahmat.oz.es@gmail.com" style="color:#58a6ff;text-decoration:none;">rahmat.oz.es@gmail.com</a>
+<span style="color:#00BFFF;">LinkedIn</span><span style="color:#ffffff">: </span><a href="https://www.linkedin.com/in/rahmatwahyuillahi/" style="color:#58a6ff;text-decoration:none;">linkedin.com/in/rahmatwahyuillahi</a>
+<span style="color:#00BFFF;">GitHub</span><span style="color:#ffffff">: </span><a href="https://github.com/matkumatmat" style="color:#58a6ff;text-decoration:none;">github.com/matkumatmat</a>
+<span style="color:#00BFFF;">Instagram</span><span style="color:#ffffff">: </span><a href="https://instagram.com/kayeeeey" style="color:#58a6ff;text-decoration:none;">@kayeeeey</a>
+<span style="color:#00BFFF;">TikTok</span><span style="color:#ffffff">: </span><a href="https://tiktok.com/@kaayeeyyy" style="color:#58a6ff;text-decoration:none;">@kaayeeyyy</a>
+
+<span style="color:#5a5a5a;">Active.Work: PT Bio Farma — Vaccine Stock Control (informal IT Support, Seksi PBF)</span>
+</div>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+> **Logo literal** `fastfetch-cli/fastfetch@dev/src/logo/ascii/a/arch.txt` — 2-col table persis terminal, bukan span rata.
 
 ---
 
@@ -90,7 +138,3 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
   <img src="https://img.shields.io/badge/Neovim-57A143?style=flat&logo=neovim&logoColor=white" />
   <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" />
 </p>
-
----
-
-<sub>Terminal block literal from <code>fastfetch-cli/fastfetch/src/logo/ascii/a/arch.txt</code> · rendered as single &lt;pre&gt; with Arch cyan #1793D1 — persis <code>fastfetch --logo arch</code> di terminal Arch lu · source di <code>PROJECT/PROFILE-GH</code></sub>
