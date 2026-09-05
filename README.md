@@ -15,6 +15,20 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
 
 ---
 
+### Contributions
+
+<p align="center">
+  <img src="https://ghchart.rshah.org/17d321/matkumatmat" alt="matkumatmat's contribution graph" />
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=matkumatmat&theme=tokyonight&hide_border=true&background=161b22&ring=ffa657&fire=ffa657&currStreakLabel=ffa657&currStreakNum=a5d6ff&dates=c9d1d9" alt="streak" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=matkumatmat&theme=tokyo-night&hide_border=true&bg_color=161b22&color=a5d6ff&line=ffa657&point=ffffff" alt="activity graph" />
+</p>
+
+> custom green dots di bawah About Me — pakai `ghchart.rshah.org` (persis native GitHub, tapi bisa ditaro di mana aja) + streak + activity graph. Auto-update tiap load, gak perlu Gas Action tambahan.
+
+---
+
 ### Featured
 
 | # | Repo | Stack | Note |
