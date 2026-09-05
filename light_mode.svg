@@ -18,26 +18,24 @@ text, tspan {white-space: pre;}
 </style>
 <rect width="985" height="560" fill="#f6f8fa" rx="15"/>
 <!-- Arch logo -->
-<text x="15" y="30" fill="#1793D1" class="ascii">
-<tspan x="15" y="30">                  -`</tspan>
-<tspan x="15" y="50">                 .o+`</tspan>
-<tspan x="15" y="70">                `ooo/</tspan>
-<tspan x="15" y="90">               `+oooo:</tspan>
-<tspan x="15" y="110">              `+oooooo:</tspan>
-<tspan x="15" y="130">              -+oooooo+:</tspan>
-<tspan x="15" y="150">            `/:-:++oooo+:</tspan>
-<tspan x="15" y="170">           `/++++/+++++++:</tspan>
-<tspan x="15" y="190">          `/++++++++++++++:</tspan>
-<tspan x="15" y="210">         `/+++ooooooooooooo/`</tspan>
-<tspan x="15" y="230">        ./ooosssso++osssssso+`</tspan>
-<tspan x="15" y="250">       .oossssso-````/ossssss+`</tspan>
-<tspan x="15" y="270">      -osssssso.      :ssssssso.</tspan>
-<tspan x="15" y="290">     :osssssss/        osssso+++.</tspan>
-<tspan x="15" y="310">    /ossssssss/        +ssssooo/-</tspan>
-<tspan x="15" y="330">  `/ossssso+/:-        -:/+osssso+-</tspan>
-<tspan x="15" y="350"> `+sso+:-`                 `.-/+oso:</tspan>
-<tspan x="15" y="370">`++:.                           `-/+/</tspan>
-<tspan x="15" y="390">.`                                 `/</tspan>
+<text x="15" y="30" fill="#24292f" class="ascii">
+<tspan x="15" y="40">@@@@%%###%%%%%%%%@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="15" y="60">@@@@%%@@@@%%%%####%%@@@@@@@@@%@@@@</tspan>
+<tspan x="15" y="80">@%####%%%%%%%%####%%@@@@@@@@@@@@@@</tspan>
+<tspan x="15" y="100">%**++++*##%%###**##%@@@@@@@@@@@%%@</tspan>
+<tspan x="15" y="120">***++=+**#####*+++*#%%%%%%@@#*+#@@</tspan>
+<tspan x="15" y="140">######%%%@@#**+=-::=*#%@@@@@@%##@@</tspan>
+<tspan x="15" y="160">%%@@@@@@%%#*++=-:....-+*##%%@@@@@@</tspan>
+<tspan x="15" y="180">*******++===++=:......  .:----=+#%</tspan>
+<tspan x="15" y="200">+==-------=+===--:.  .. ...::-:-=*</tspan>
+<tspan x="15" y="220">+==------==+*#%##*+*#+:......::-+*</tspan>
+<tspan x="15" y="240">++==----==+*%@%##*+*%@*--::...:=*#</tspan>
+<tspan x="15" y="260">*+++=====++*#*++==:..--:::...:-+##</tspan>
+<tspan x="15" y="280">#***+======++++===-::.......:-+*#%</tspan>
+<tspan x="15" y="300">##***+++++*******+++=-::....:=*#%%</tspan>
+<tspan x="15" y="320">###******###%%%%%####%#+=----+#%%@</tspan>
+<tspan x="15" y="340">%####****#%@%#+=---::-*#*++++#%%@@</tspan>
+<tspan x="15" y="360">@%%######**********+=-::-=+*#%%@@@</tspan>
 </text>
 <text x="390" y="30" fill="#24292f">
 <tspan x="390" y="30">matkumatmat</tspan><tspan class="cc"> ——————————————————————————————————————————</tspan>
