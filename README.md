@@ -25,8 +25,6 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=matkumatmat&theme=tokyo-night&hide_border=true&bg_color=161b22&color=a5d6ff&line=ffa657&point=ffffff" alt="activity graph" />
 </p>
 
-> custom green dots di bawah About Me — pakai `ghchart.rshah.org` (persis native GitHub, tapi bisa ditaro di mana aja) + streak + activity graph. Auto-update tiap load, gak perlu Gas Action tambahan.
-
 ---
 
 ### Featured
