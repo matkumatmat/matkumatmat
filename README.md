@@ -40,13 +40,51 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
 
 ### Stack
 
+> realistis — cuma yang beneran kepake di repo, gak dilebayin
+
+**Languages**
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white" />
+</p>
+
+**Frameworks**
+<p>
+  <!-- Python -->
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Alembic-6B6B6B?style=flat" />
+  <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat" />
+  <!-- Rust -->
+  <img src="https://img.shields.io/badge/Tokio-000000?style=flat" />
+  <img src="https://img.shields.io/badge/SQLx-FF6B6B?style=flat" />
+  <img src="https://img.shields.io/badge/Serde-000000?style=flat" />
+  <img src="https://img.shields.io/badge/Reqwest-000000?style=flat" />
+  <img src="https://img.shields.io/badge/Jsonwebtoken-000000?style=flat" />
+  <!-- TS / JS -->
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=reactrouter&logoColor=white" />
+  <!-- Go -->
+  <img src="https://img.shields.io/badge/Go_stdlib-00ADD8?style=flat&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/ZPL-000000?style=flat" />
+</p>
+
+**DevOps & Tools**
 <p>
   <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Neovim-57A143?style=flat&logo=neovim&logoColor=white" />
   <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" />
+  <img src="https://img.shields.io/badge/Zebra_Printer-000000?style=flat" />
 </p>
 
 ---
