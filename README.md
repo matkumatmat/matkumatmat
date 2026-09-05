@@ -1,77 +1,24 @@
-<div align="center">
+<pre style="background:#0d1117;color:#c9d1d9;padding:18px 20px;border-radius:8px;line-height:1.35;font-size:13px;overflow-x:auto;white-space:pre;font-family:JetBrains Mono, ui-monospace, monospace;border:1px solid #21262d;"><span style="color:#1793D1">                  -`</span>   <span style="color:#00BFFF;font-weight:600">matkumatmat@biofarma</span>
+<span style="color:#1793D1">                 .o+`</span>   <span style="color:#5a5a5a">-------------------</span>
+<span style="color:#1793D1">                `ooo/</span>   <span style="color:#00BFFF">OS</span><span style="color:#ffffff">: Arch Linux</span>
+<span style="color:#1793D1">               `+oooo:</span>   <span style="color:#00BFFF">Host</span><span style="color:#ffffff">: PT Bio Farma (Persero)</span>
+<span style="color:#1793D1">              `+oooooo:</span>   <span style="color:#00BFFF">Kernel</span><span style="color:#ffffff">: 6.18.3-arch1-1</span>
+<span style="color:#1793D1">              -+oooooo+:</span>   <span style="color:#00BFFF">Uptime</span><span style="color:#ffffff">: 2 years, 9 months, 29 days (1029 days)</span>
+<span style="color:#1793D1">            `/:-:++oooo+:</span>   <span style="color:#00BFFF">Packages</span><span style="color:#ffffff">: 51 repos (45 public) | Stars: 1</span>
+<span style="color:#1793D1">           `/++++/+++++++:</span>   <span style="color:#00BFFF">Shell</span><span style="color:#ffffff">: zsh 5.9</span>
+<span style="color:#1793D1">          `/++++++++++++++:</span>   <span style="color:#00BFFF">WM</span><span style="color:#ffffff">: Hyprland / GNOME</span>
+<span style="color:#1793D1">         `/+++o</span><span style="color:#ffffff">oooooooo</span><span style="color:#1793D1">oooo/`</span>   <span style="color:#00BFFF">Terminal</span><span style="color:#ffffff">: kitty / tmux</span>
+<span style="color:#1793D1">        ./</span><span style="color:#ffffff">ooosssso++osssssso</span><span style="color:#1793D1">+`</span>   <span style="color:#00BFFF">IDE</span><span style="color:#ffffff">: VSCode 1.108.0, Neovim 0.11.6</span>
+<span style="color:#ffffff">       .oossssso-````/ossssss+`</span>   <span style="color:#00BFFF">Languages.Programming</span><span style="color:#ffffff">: Python, Rust</span>
+<span style="color:#1793D1">      -osssssso.      :ssssssso.</span>   <span style="color:#00BFFF">Languages.Real</span><span style="color:#ffffff">: Indonesian, English</span>
+<span style="color:#1793D1">     :osssssss/        osssso+++.</span>   <span style="color:#00BFFF">Hobbies.Software</span><span style="color:#ffffff">: data analysis, learning system arch</span>
+<span style="color:#1793D1">    /ossssssss/        +ssssooo/-</span>   <span style="color:#00BFFF">Hobbies.Hardware</span><span style="color:#ffffff">: configuring work hardware</span>
+<span style="color:#1793D1">  `/ossssso+/:-        -:/+osssso+-</span>   <span style="color:#ffffff">                    (thermal printer, temp logger)</span>
+<span style="color:#1793D1"> `+sso+:-`                 `.-/+oso:</span>   <span style="color:#00BFFF">Contact</span><span style="color:#ffffff">: mamattewahyu@gmail.com | rahmat.oz.es@gmail.com</span>
+<span style="color:#1793D1">`++:.                           `-/+/</span>   <span style="color:#00BFFF">LinkedIn</span><span style="color:#ffffff">: linkedin.com/in/rahmatwahyuillahi</span>
+<span style="color:#1793D1">.`                                 `/</span>   <span style="color:#00BFFF">GitHub</span><span style="color:#ffffff">: github.com/matkumatmat  ·  Instagram: @kayeeeey  ·  TikTok: @kaayeeyyy</span></pre>
 
-<table>
-<tr>
-<td valign="top" align="left"><pre>
-@@@@%%###%%%%%%%%@@@@@@@@@@@@@@@@@
-@@@@%%@@@@%%%%####%%@@@@@@@@@%@@@@
-@%####%%%%%%%%####%%@@@@@@@@@@@@@@
-%**++++*##%%###**##%@@@@@@@@@@@%%@
-***++=+**#####*+++*#%%%%%%@@#*+#@@
-######%%%@@#**+=-::=*#%@@@@@@%##@@
-%%@@@@@@%%#*++=-:....-+*##%%@@@@@@
-*******++===++=:......  .:----=+#%
-+==-------=+===--:.  .. ...::-:-=*
-+==------==+*#%##*+*#+:......::-+*
-++==----==+*%@%##*+*%@*--::...:=*#
-*+++=====++*#*++==:..--:::...:-+##
-#***+======++++===-::.......:-+*#%
-##***+++++*******+++=-::....:=*#%%
-###******###%%%%%####%#+=----+#%%@
-%####****#%@%#+=---::-*#*++++#%%@@
-@%%######**********+=-::-=+*#%%@@@
-</pre></td>
-<td valign="top" align="left"><pre>
-matkumatmat@biofarma
--------------------
-OS: Arch Linux
-Host: PT Bio Farma (Persero)
-Kernel: 6.18.3-arch1-1
-Uptime: 2 years, 9 months, 29 days
-  └─ 1029 days since 2023-11-11
-Packages: 51 repos (45 public) | Stars: 1
-Shell: zsh 5.9
-WM: Hyprland / GNOME
-IDE: VSCode 1.108.0, Neovim 0.11.6
-
-Languages.Programming: Python, Rust
-Languages.Real: Indonesian, English
-Languages.Human: ID (native), EN (fluent)
-
-Hobbies.Software: data analysis,
-                  learning system arch
-Hobbies.Hardware: configuring work
-                  hardware (thermal
-                  printer, temp logger)
-
-Contact
--------------------
-Email.Personal[0]: mamattewahyu@gmail.com
-Email.Personal[1]: rahmat.oz.es@gmail.com
-LinkedIn: linkedin.com/in/rahmatwahyuillahi
-Instagram: @kayeeeey
-TikTok: @kaayeeyyy
-GitHub: github.com/matkumatmat
-
-Active.Work
--------------------
-PT Bio Farma — Vaccine Stock Control
- └─ informal IT Support, Seksi PBF
- └─ PBF logistics + ZPL infra
- └─ gzebra-pbf (Go bridge → Zebra)
-
-GitHub Stats
--------------------
-Repos: 51 (contributed: 45)
-Commits: ~444 | Followers: 1
-Lines on GitHub: ~1.2M (est.)
-</pre></td>
-</tr>
-</table>
-
-</div>
-
-> **Host** = tempat lu aktif kerja (bukan hostname laptop). **Kernel** = kernel OS lu (`uname -r` = `6.18.3-arch1-1`) — di neofetch asli itu versi kernel Linux, di profile bisa lu artiin sebagai "core engine" lu. Uptime di atas paff hitung dari `github join 2023-11-11 → sekarang 2026-09-05`.
+> **Logo = Arch fastfetch literal** `src/logo/ascii/a/arch.txt` dari `fastfetch-cli/fastfetch@dev` — bukan custom gepeng. Warna `#1793D1` (Arch cyan). **Host** = active work lu, **Kernel** = `uname -r`.
 
 ---
 
@@ -115,7 +62,7 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
             │  • berusty, pxxxstore, fckode, serverr
             │  • rq (tokio + sqlx), slack-clone (fullstack)
             │
-2026-09-05  ── profile README neofetch ini live ✨
+2026-09-05  ── profile README fastfetch literal live ✨
             │  next: polish v1-fullstack README + public-kan paffcode-ai
             └─ ...
 ```
@@ -146,4 +93,4 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
 
 ---
 
-<sub>ASCII art generated from `avatars.githubusercontent.com/u/150525259` · `matkumatmat@biofarma` neofetch style — inspired by <a href="https://github.com/Andrew6rant/Andrew6rant">Andrew6rant</a> · source di <code>PROJECT/PROFILE-GH</code> → push ke <code>matkumatmat/matkumatmat</code></sub>
+<sub>Terminal block literal from <code>fastfetch-cli/fastfetch/src/logo/ascii/a/arch.txt</code> · rendered as single &lt;pre&gt; with Arch cyan #1793D1 — persis <code>fastfetch --logo arch</code> di terminal Arch lu · source di <code>PROJECT/PROFILE-GH</code></sub>
