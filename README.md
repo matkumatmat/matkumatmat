@@ -29,12 +29,14 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
 
 ### Featured
 
-| # | Repo | Stack | Note |
-|---|------|-------|------|
-| 01 | [gzebra-pbf](https://github.com/matkumatmat/gzebra-pbf) | Go · ZPL | production Go bridge, Zebra TCP/IP |
-| 02 | [k-plugin-skills-claude-code](https://github.com/matkumatmat/k-plugin-skills-claude-code) | Skill | TDD meta-skill |
-| 03 | [v1-fullstack-PBF](https://github.com/matkumatmat/v1-fullstack-PBF) | TS · Python | inventory control fullstack |
-| 04 | [rq](https://github.com/matkumatmat/rq) | Rust | tokio + sqlx data layer |
+> 4 repos paling mature — yang beneran dipake, bukan template
+
+| # | Repo | Stack | Highlight |
+|---|------|-------|-----------|
+| **01** | **[paffcode-ai](https://github.com/matkumatmat/paffcode-ai)** `private` | `TypeScript · Bun · 53MB` | Flagship fork `anomalyco/opencode` — AI coding agent customized for PBF workflows. Monorepo `console` + `desktop` + `opencode`, `paff` branch fixes (initWorkspace, unzip). Everyday driver di Arch |
+| **02** | **[pxxxstore](https://github.com/matkumatmat/pxxxstore)** | `Rust · 12KB` | Encrypted vault CLI — **Argon2id + ChaCha20-Poly1305**, single file `x.bin`, zero-leak passphrase, atomic writes. `clap` + `serde` + `rpassword` |
+| **03** | **[gzebra-pbf](https://github.com/matkumatmat/gzebra-pbf)** | `Go · 29MB` | Production Go bridge **AppSheet → Zebra ZPL** over TCP/IP. DDD + filesystem queue + cron retry, `pbf-bridge.exe` shipped, dipakai di alur PBF Bio Farma beneran |
+| **04** | **[kx-scraper](https://github.com/matkumatmat/kx-scraper)** | `Go · 2.2MB` | KX/X search scraper — `Cobra` CLI, `go-sqlite3`, `SearchParams` struct (`MainPhrase`, `FromAccount`, `MinFaves`...), `posts top/latest` + `user`, trunk `go 1.25.7` |
 
 ---
 
