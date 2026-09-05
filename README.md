@@ -3,36 +3,23 @@
 <table>
 <tr>
 <td valign="top" align="left"><pre>
-WmXnr/_??+~&gt;!+&gt;]&lt;&gt;~&gt;l!__{n\qmru(_:;&lt;!I&quot;;l;;&#x27;....&#x27;&quot;,&lt;x*a
-w+\|?++i;,&quot;^I&lt;-t{}[&lt;&lt;-&gt;-?&lt;|ct[?-?+?|?_&lt;&lt;!!l&quot;`&#x27;      `!X
-$J--iii:`,:l_i_\1[[[}1[!;li~![{~&lt;~-+_]~,;ll:&quot;^      `l,
-O_?[+il`&#x27;II;~]-{{_]-_!,&quot;&quot;&quot;&#x27; &#x27;Il^^&quot;^&quot;^^:,&quot;Ill!;.   &#x27;``^i
-~]]&gt;l:^^Ii~li&lt;;iI!!;;;liI:, &#x27;&quot;&#x27;`.&#x27;^&#x27;&#x27;`^^&quot;,&lt;~~&lt;^&#x27;.&#x27;`.`&#x27;;
-?-+I^`^,;l!li^^`^Iil!&lt;~!!&gt;^...,l!^`&#x27;```:Ili;;l!:..&#x27;. &#x27;^
-]&lt;!:^&quot;`^:&quot;&#x27;&#x27;&#x27;&#x27;!_}))]__&gt;&lt;~&lt;&gt;!;&quot;;:I^..``&#x27;`^:l&quot;&#x27;:l`&#x27;.
-?~l```^&quot;&#x27;...`!~&lt;i;:Ii!&lt;]11{)]&gt;!.&#x27;&#x27;  &#x27;&#x27;`;i;,&quot;&quot;I&lt;i^.    .
-_&lt;:..`.  .&#x27;;+?-_~&lt;~&lt;&lt;i&lt;?}11{{~&gt;..^.&#x27;&quot;&#x27;&#x27;&#x27;`^`.^,`:.     &quot;
-i;&#x27;  ... .+tzUJUcj(]??}{{/j\[]!.:;,` &#x27;&quot;&quot; &quot;il          &#x27;
-!:&#x27;      -nvXC0mOXrt){{\tcJUr(-!ii&gt;~:.l-}f(&lt;&#x27;         .
-l,      ^\ftxzLQvt|[]|urvOhokC/{[&lt;&gt;i!I&gt;1YZt:&#x27;.        .
-;^      !)}-&lt;!:^ .,;^?cLq#$$$$oJ/&lt;&#x27;:l    `:. .        `
-;^     .-)[~!i&gt;&gt;~+[\XZZmqM@@@@$$&amp;#dQUxjtf)&gt;&quot;&quot;`        `
-l,     I1/cCL0ZZwpk*#d0Lk%$$$@BB$$$$$$$$$$*c1&gt;&quot;      .;
-&lt;l&#x27;   &#x27;-\zwaM88BB%$%*mpWkpd#$$$$$@@@@@@@@@@px{&lt;&quot;     ,_
-&lt;&gt;&quot;   I)xJmh#&amp;8B@$8*kmX[&lt;-1(vx}[LB@$$$$$@@*Cr1-l.   .i~
-&lt;~I   !)rXQmd*8@$&amp;hpOu-^;)\rLX[!_dBB$$$$$@bXf{+;.  .;~~
-&lt;&lt;&gt;.  ;}\nYC0wh#MakmwY(xJOq#W$$$kM$@$$$@$&amp;Cj(?i&quot;   &quot;+&lt;]
-l&lt;+,  &#x27;~{|juXJOpkkkddwQJXO*bbB@$$$@$$$$@@qj)[~:.  `&gt;i-?
-&quot;!~&lt;   ,-1\jucU0ZwwZLJzYYYYObbhW$$@$$$$$WX([+l&#x27;  .li~[-
-l:~+!   ;[)/fxcXCCJnrcj}++&lt;[f(\|\qBBBB$%O/[~!^   :!!---
-;Il&lt;~I  .i}(\/rnuxxt}&gt;^!{xXCQ0Cc{I?rm*amt?~l&quot;.  &quot;il~~~i
-~^::!&lt;l  ^&lt;[1)\tftfj{?|uCkM&amp;M8$$$*wq0CUt_&gt;I&quot;.  ^iI&lt;&lt;&lt;l:
-j&quot;`&quot;,:&lt;&lt;&#x27; &quot;i-[{||1\nux|{_&lt;i!l![fJb*#hC|~i;^   &quot;iI&lt;&lt;&gt;&gt;::
-k;:`^,&quot;l&gt;^ &#x27;I~_]}}(ft\)[_&gt;I:&quot;:i-fzXUJ/i;,&#x27;   &quot;!!&lt;i&lt;&lt;!:,
-/~,&quot;&#x27;&#x27;^^,!l..:li~_[11{)/juzUOqwpmXj\[&gt;:^.  `:!;:l1|];&quot;`
- ;:^^&quot;&#x27;&#x27;`^;!^ &#x27;,;!~_-]{xwMWM&amp;B$$$WC1&lt;!;&#x27; .:I::^.:[~I:`.
-c?:,&#x27;&quot;&quot; &#x27;.&#x27;^;:&#x27; `;&lt;]1\trCwwq##Mh#aY[~&gt;:.`:;&quot;^`&#x27;.`![:&#x27;..
-$8/&#x27;^&#x27;, &#x27;  ..^,&quot;&#x27;`I+{\/\\|jvcXYunt+!l:&#x27;^:&quot;`&#x27;^&#x27; .&#x27;^-&gt; &#x27;&#x27;
+@@@@%%###%%%%%%%%@@@@@@@@@@@@@@@@@
+@@@@%%@@@@%%%%####%%@@@@@@@@@%@@@@
+@%####%%%%%%%%####%%@@@@@@@@@@@@@@
+%**++++*##%%###**##%@@@@@@@@@@@%%@
+***++=+**#####*+++*#%%%%%%@@#*+#@@
+######%%%@@#**+=-::=*#%@@@@@@%##@@
+%%@@@@@@%%#*++=-:....-+*##%%@@@@@@
+*******++===++=:......  .:----=+#%
++==-------=+===--:.  .. ...::-:-=*
++==------==+*#%##*+*#+:......::-+*
+++==----==+*%@%##*+*%@*--::...:=*#
+*+++=====++*#*++==:..--:::...:-+##
+#***+======++++===-::.......:-+*#%
+##***+++++*******+++=-::....:=*#%%
+###******###%%%%%####%#+=----+#%%@
+%####****#%@%#+=---::-*#*++++#%%@@
+@%%######**********+=-::-=+*#%%@@@
 </pre></td>
 <td valign="top" align="left"><pre>
 matkumatmat@biofarma
