@@ -88,5 +88,3 @@ Sed rhoncus, nisl vel fermentum sodales, mauris urna placerat mauris, at aliquet
 </p>
 
 ---
-
-<sub>Terminal card is SVG — <code>dark_mode.svg</code> / <code>light_mode.svg</code> (985×530) generated from <code>fastfetch-cli/fastfetch/src/logo/ascii/a/arch.txt</code> + <code>today.py</code>. Auto-updated daily via <code>.github/workflows/build.yaml</code> (cron 04:00 UTC). Inspirasi: <a href="https://github.com/Andrew6rant/Andrew6rant">Andrew6rant</a></sub>
