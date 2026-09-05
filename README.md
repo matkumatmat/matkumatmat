@@ -1,7 +1,7 @@
 <a href="https://github.com/matkumatmat/matkumatmat">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/matkumatmat/matkumatmat/main/dark_mode.svg">
-    <img alt="matkumatmat's GitHub Profile — fastfetch Arch" src="https://raw.githubusercontent.com/matkumatmat/matkumatmat/main/light_mode.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/matkumatmat/matkumatmat/main/dark_mode.svg?v=photo1">
+    <img alt="matkumatmat — fastfetch photo ascii" src="https://raw.githubusercontent.com/matkumatmat/matkumatmat/main/light_mode.svg?v=photo1">
   </picture>
 </a>
 
