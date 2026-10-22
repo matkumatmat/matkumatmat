@@ -1,3 +1,4 @@
+import Certification from './section/Certification'
 import Contact from './section/Contact'
 import Experience from './section/Experience'
 import Intro from './section/Intro'
@@ -15,6 +16,7 @@ export default function About() {
       <Intro />
       <Experience />
       <Skills />
+      <Certification />
       <Contact />
     </main>
   )

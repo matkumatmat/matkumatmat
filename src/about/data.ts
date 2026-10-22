@@ -8,9 +8,20 @@ export type AboutBlock = {
   paragraphs: string[]
 }
 
-export type AboutLink = {
+export type SocialLink = {
   label: string
+  handle: string
   href: string
+  icon: string
+}
+
+export type SkillType = 'hard' | 'soft' | 'meta' | 'cognitive' | 'life'
+
+export type SkillGroup = {
+  id: SkillType
+  label: string
+  icon: string
+  items: string[]
 }
 
 export type About = {
@@ -18,10 +29,10 @@ export type About = {
   kicker: string
   lede: string[]
   blocks: AboutBlock[]
-  skills: string[]
+  skills: SkillGroup[]
   contact: {
-    email: string
-    links: AboutLink[]
+    emails: string[]
+    socials: SocialLink[]
   }
 }
 
@@ -48,17 +59,122 @@ export const about: About = {
     },
   ],
 
+  // CONTOH FILLER buat prototipe, ganti dengan skills aslimu.
   skills: [
-    'TODO: TypeScript',
-    'TODO: React',
-    'TODO: Skill lain',
+    {
+      id: 'hard',
+      label: 'Hard Skills',
+      icon: 'ms-code-icon',
+      items: [
+        'TypeScript',
+        'React',
+        'Tailwind CSS',
+        'Node.js',
+        'PostgreSQL',
+        'REST API',
+        'Git & GitHub',
+        'Docker',
+        'Vite',
+        'Playwright',
+        'Figma',
+        'Linux CLI',
+      ],
+    },
+    {
+      id: 'soft',
+      label: 'Soft Skills',
+      icon: 'chat-icon',
+      items: [
+        'Communication',
+        'Teamwork',
+        'Leadership',
+        'Empathy',
+        'Adaptability',
+        'Time Management',
+        'Mentoring',
+        'Reliability',
+        'Collaboration',
+        'Work Ethic',
+      ],
+    },
+    {
+      id: 'meta',
+      label: 'Meta Skills',
+      icon: 'layers-icon',
+      items: [
+        'Learning to Learn',
+        'Systems Thinking',
+        'Prioritization',
+        'Deep Work',
+        'Feedback Loops',
+        'Documentation Habit',
+        'Goal Setting',
+        'Self Review',
+        'Knowledge Sharing',
+        'Process Improvement',
+      ],
+    },
+    {
+      id: 'cognitive',
+      label: 'Cognitive Skills',
+      icon: 'bulb-icon',
+      items: [
+        'Critical Thinking',
+        'Analytical Reasoning',
+        'Pattern Recognition',
+        'Decision Making',
+        'Attention to Detail',
+        'Logical Thinking',
+        'Research',
+        'Estimation',
+        'Troubleshooting',
+        'Memory Techniques',
+      ],
+    },
+    {
+      id: 'life',
+      label: 'Life Skills',
+      icon: 'home-icon',
+      items: [
+        'Cooking',
+        'Personal Finance',
+        'First Aid',
+        'Driving',
+        'Fitness',
+        'Gardening',
+        'Photography',
+        'Home Repair',
+      ],
+    },
   ],
 
   contact: {
-    email: 'TODO: email@kamu.dev',
-    links: [
-      { label: 'TODO: GitHub', href: 'https://github.com/' },
-      { label: 'TODO: LinkedIn', href: 'https://linkedin.com/' },
+    emails: ['mamattewahyu@gmail.com', 'rahmat.oz.es@gmail.com'],
+    socials: [
+      {
+        label: 'GitHub',
+        handle: '@matkumatmat',
+        href: 'https://github.com/matkumatmat',
+        icon: 'github-icon',
+      },
+      {
+        label: 'LinkedIn',
+        handle: 'in/rahmatwahyuillahi',
+        href: 'https://www.linkedin.com/in/rahmatwahyuillahi/',
+        icon: 'linkedin-icon',
+      },
+      {
+        label: 'Instagram',
+        handle: '@kayeeeey',
+        href: 'https://www.instagram.com/kayeeeey/',
+        icon: 'instagram-icon',
+      },
+      {
+        label: 'TikTok',
+        handle: '@kaayeeyyy',
+        href: 'https://www.tiktok.com/@kaayeeyyy',
+        icon: 'tiktok-icon',
+      },
     ],
   },
 }
@@ -192,37 +308,62 @@ export type ExperienceItem = {
   name: string
 }
 
-/** Urutan: terbaru ke terlama. Icon = path gambar (/logos/...) atau id symbol di public/icons.svg */
+/** Order: newest to oldest. Icon = image path (/logos/...) or symbol id in public/icons.svg */
 export const education: ExperienceItem[] = [
-  { icon: '/logos/smkn7.png', year: '2019–2022', name: 'Kimia Analisis · SMKN 7 Bandung' },
+  { icon: '/logos/smkn7.png', year: '2019–2022', name: 'Chemical Analysis · SMKN 7 Bandung' },
 ]
 
-/** Urutan: terbaru ke terlama. Icon = path gambar (/logos/...) atau id symbol di public/icons.svg */
+/** Order: newest to oldest. Icon = image path (/logos/...) or symbol id in public/icons.svg */
 export const workExperience: ExperienceItem[] = [
   {
     icon: '/logos/biofarma.png',
-    year: 'Des 2024–Sekarang',
-    name: 'Lead Field Stok Cold Chain · PT Bio Farma',
+    year: 'Dec 2024–Present',
+    name: 'Cold Chain Stock Field Lead · PT Bio Farma',
   },
   {
     icon: '/logos/biofarma.png',
-    year: 'Okt–Nov 2024',
-    name: 'Staff Stok Produk Cold Chain · PT Bio Farma',
+    year: 'Oct–Nov 2024',
+    name: 'Cold Chain Product Stock Staff · PT Bio Farma',
   },
   {
     icon: '/logos/biofarma.png',
     year: 'Sep 2023–Sep 2024',
-    name: 'Pelaksana Stok Produk Cold Chain · PT Bio Farma',
+    name: 'Cold Chain Product Stock Operator · PT Bio Farma',
   },
   {
     icon: '/logos/biofarma.png',
-    year: 'Jan–Agu 2023',
-    name: 'Pelaksana Penunjang Pengepakan · PT Bio Farma',
+    year: 'Jan–Aug 2023',
+    name: 'Packaging Support Operator · PT Bio Farma',
   },
   {
     icon: '/logos/biofarma.png',
-    year: 'Agu–Des 2022',
-    name: 'Pelaksana Packing Vaksin · PT Bio Farma',
+    year: 'Aug–Dec 2022',
+    name: 'Vaccine Packing Operator · PT Bio Farma',
   },
-  { icon: '/logos/b4t.png', year: 'Agu–Des 2021', name: 'Magang · B4T' },
+  { icon: '/logos/b4t.png', year: 'Aug–Dec 2021', name: 'Intern · B4T' },
+]
+
+export type Certification = {
+  title: string
+  issuer: string
+  /** Image path (/logos/...), sprite id, atau '' untuk monogram inisial */
+  logo: string
+  issued: string
+  credentialId: string
+  /** Link verifikasi, null kalau belum ada */
+  url: string | null
+  skills: string[]
+}
+
+/** Order: newest to oldest. */
+export const certifications: Certification[] = [
+  {
+    title: 'Certificate of completion: Claude 101',
+    issuer: 'Anthropic',
+    logo: '',
+    issued: 'Mar 2026',
+    credentialId: 'pzskvs6i49ep',
+    url: null,
+    skills: ['AI Automation', 'Artificial Intelligence'],
+  },
 ]
