@@ -82,35 +82,100 @@ export const resumes: ResumeDoc[] = [
   },
 ]
 
+export type MilestoneCore = 'warehouse' | 'freelance' | 'programming' | 'AI'
+
 export type Milestone = {
+  image: string
   year: string
-  title: string
+  core: MilestoneCore
+  tags: string[]
   description: string
+}
+
+function placeholderImage(label: string): string {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480"><rect width="100%" height="100%" fill="#a8a29e"/><text x="50%" y="50%" fill="#1c1917" font-family="monospace" font-size="30" text-anchor="middle" dominant-baseline="middle">${label}</text></svg>`
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`
 }
 
 export const milestones: Milestone[] = [
   {
+    image: placeholderImage('TODO gambar 1'),
+    year: 'TODO: 2016',
+    core: 'warehouse',
+    tags: ['TODO: stok opname'],
+    description:
+      'TODO: peran pertamamu di gudang: tanggung jawab harian, sistem yang dipakai, dan apa yang dipelajari soal ketelitian. Tulis satu momen yang paling membentuk caramu bekerja sampai sekarang.',
+  },
+  {
+    image: placeholderImage('TODO gambar 2'),
+    year: 'TODO: 2017',
+    core: 'warehouse',
+    tags: ['TODO: lead shift'],
+    description:
+      'TODO: tanggung jawab yang bertambah: memimpin shift, mengatur stok, atau menekan angka selisih. Ceritakan target konkret yang berhasil dicapai dan bagaimana caranya.',
+  },
+  {
+    image: placeholderImage('TODO gambar 3'),
+    year: 'TODO: 2018',
+    core: 'warehouse',
+    tags: ['TODO: layout rak'],
+    description:
+      'TODO: perbaikan proses yang kamu usulkan: alur picking, layout rak, atau pencatatan. Jelaskan kondisi sebelum dan sesudahnya, plus dampaknya ke tim.',
+  },
+  {
+    image: placeholderImage('TODO gambar 4'),
+    year: 'TODO: 2019',
+    core: 'freelance',
+    tags: ['TODO: klien pertama'],
+    description:
+      'TODO: proyek freelance pertama: dari mana kliennya datang dan apa yang dikerjakan. Jujur soal tarif awal dan pelajaran paling mahal dari proyek ini.',
+  },
+  {
+    image: placeholderImage('TODO gambar 5'),
+    year: 'TODO: 2020',
+    core: 'freelance',
+    tags: ['TODO: retainer'],
+    description:
+      'TODO: titik ketika freelance jadi serius: klien berulang, kontrak lebih besar, atau niche yang dipilih. Tulis apa yang berubah dari caramu menangani klien.',
+  },
+  {
+    image: placeholderImage('TODO gambar 6'),
     year: 'TODO: 2021',
-    title: 'TODO: judul milestone pertama',
+    core: 'freelance',
+    tags: ['TODO: proyek besar'],
     description:
-      'TODO: deskripsi singkat — apa yang terjadi, peranmu, dan hasil yang dicapai.',
+      'TODO: proyek freelance paling berkesan: masalah kliennya, solusimu, dan hasilnya. Kalau ada angka (omzet klien naik, waktu hemat), taruh di sini.',
   },
   {
+    image: placeholderImage('TODO gambar 7'),
     year: 'TODO: 2022',
-    title: 'TODO: judul milestone kedua',
+    core: 'programming',
+    tags: ['TODO: bahasa pertama'],
     description:
-      'TODO: deskripsi singkat — proyek, pivot, atau pencapaian yang menandai babak baru.',
+      'TODO: awal masuk programming: bahasa pertama, alasan pindah jalur, dan proyek pertama yang selesai. Ceritakan fase paling frustasi dan cara melewatinya.',
   },
   {
+    image: placeholderImage('TODO gambar 8'),
     year: 'TODO: 2023',
-    title: 'TODO: judul milestone ketiga',
+    core: 'programming',
+    tags: ['TODO: rilis perdana'],
     description:
-      'TODO: deskripsi singkat — dampak nyata: angka, pengguna, atau perubahan yang kamu bawa.',
+      'TODO: aplikasi atau web pertama yang dipakai orang lain: stack yang dipakai dan fitur utamanya. Tulis feedback pengguna yang paling mengubah arah pengembangan.',
   },
   {
+    image: placeholderImage('TODO gambar 9'),
     year: 'TODO: 2024',
-    title: 'TODO: judul milestone keempat',
+    core: 'AI',
+    tags: ['TODO: workflow AI'],
     description:
-      'TODO: deskripsi singkat — posisi kamu sekarang dan arah yang sedang dibangun.',
+      'TODO: pertama kali memakai AI untuk kerja nyata: use case-nya, tool yang dipakai, dan apa yang berubah dari outputmu. Sebutkan satu workflow yang sekarang tidak bisa dilepas.',
+  },
+  {
+    image: placeholderImage('TODO gambar 10'),
+    year: 'TODO: 2025',
+    core: 'AI',
+    tags: ['TODO: arah baru'],
+    description:
+      'TODO: posisimu sekarang: bagaimana warehouse, freelance, programming, dan AI bertemu di kerjaanmu hari ini. Tutup dengan arah yang sedang dibangun ke depan.',
   },
 ]
