@@ -1,4 +1,39 @@
+import type { ReactNode } from 'react'
 import { about } from '../data'
+
+const KEYWORDS = [
+  '4 years',
+  'cold chain',
+  'supply chain',
+  'warehouse',
+  'python',
+  'excel',
+  'database',
+  'data analyst',
+  'auditor',
+  'AI',
+  'decision making',
+  'logical thinking',
+]
+
+const keywordPattern = new RegExp(
+  `\\b(${KEYWORDS.map((kw) => kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .sort((a, b) => b.length - a.length)
+    .join('|')})\\b`,
+  'gi',
+)
+
+function highlight(text: string): ReactNode[] {
+  return text.split(keywordPattern).map((part, i) =>
+    i % 2 === 1 ? (
+      <mark key={i} className="bg-accent px-1 text-accent-fg">
+        {part}
+      </mark>
+    ) : (
+      <span key={i}>{part}</span>
+    ),
+  )
+}
 
 export default function Intro() {
   return (
@@ -7,7 +42,7 @@ export default function Intro() {
       className="relative w-full overflow-hidden rounded-xl bg-brand md:rounded-2xl"
     >
       <img
-        src="/meta-muse-image-generated.webp"
+        src={`${import.meta.env.BASE_URL}meta-muse-image-generated.webp`}
         alt="Potret di lorong gudang"
         loading="lazy"
         className="absolute inset-0 h-full w-full object-cover [object-position:50%_25%] md:scale-[1.12] md:-translate-x-[6%]"
@@ -31,15 +66,16 @@ export default function Intro() {
               <div aria-hidden="true" className="bg-fg/10 mb-6 h-px w-full" />
               <p className="text-label flex items-center gap-2 uppercase text-brand-text">
                 <span aria-hidden="true" className="bg-accent inline-block h-2 w-2" />
-                {about.kicker}
+                {highlight(about.kicker)}
               </p>
               <div className="mt-3 flex flex-col gap-4">
                 {about.lede.map((paragraph) => (
                   <p key={paragraph} className="text-body">
-                    {paragraph}
+                    {highlight(paragraph)}
                   </p>
                 ))}
               </div>
+
             </div>
           </div>
         </div>

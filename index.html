@@ -16,6 +16,23 @@
         document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
       })()
     </script>
+    <script>
+      // Decode the route stashed by 404.html back into a real path.
+      ;((l) => {
+        if (l.search[1] === '/') {
+          const decoded = l.search
+            .slice(1)
+            .split('&')
+            .map((s) => s.replace(/~and~/g, '&'))
+            .join('?')
+          window.history.replaceState(
+            null,
+            '',
+            l.pathname.slice(0, -1) + decoded + l.hash,
+          )
+        }
+      })(window.location)
+    </script>
   </head>
   <body>
     <div id="root"></div>

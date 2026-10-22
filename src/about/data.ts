@@ -37,12 +37,12 @@ export type About = {
 }
 
 export const about: About = {
-  heading: 'Lorem ipsum dolor sit amet',
-  kicker: 'Lorem ipsum dolor',
+  heading: 'Operator by profession, builder by habit.',
+  kicker: 'Cold Chain Lead · Developer · AI Practitioner',
   lede: [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+    'I lead cold chain stock operations at PT Bio Farma, with 4 years across warehouse and supply chain roles. I started as a packing operator in 2022 and worked up to field lead, through WHO audit preparation and distributor audits as a warehouse auditor.',
+    'Along the way I started building the tools I needed instead of waiting for them: stock recording systems in Excel, a warehouse management system with GS1 barcode integration backed by a database, dashboards, and ticketing apps, using Python, TypeScript, Go, and AppSheet. Between shifts I work as a freelance data analyst, from web scraping to thesis datasets.',
+    'Since 2024 I have folded AI into everything: research workflows with verifiable citations, coding agents, a voice-driven stock opname bot, and a multi-division AI workspace. Years of operations work trained my logical thinking, and that is what my decision making runs on.',
   ],
 
   blocks: [
@@ -59,25 +59,30 @@ export const about: About = {
     },
   ],
 
-  // CONTOH FILLER buat prototipe, ganti dengan skills aslimu.
+  // Diisi dari hasil interview pemilik.
   skills: [
     {
       id: 'hard',
       label: 'Hard Skills',
       icon: 'ms-code-icon',
       items: [
+        'Python',
         'TypeScript',
+        'Go',
         'React',
-        'Tailwind CSS',
-        'Node.js',
-        'PostgreSQL',
-        'REST API',
+        'Excel & VBA',
+        'AppSheet',
+        'Apps Script',
+        'Data Analysis',
+        'Web Scraping',
+        'ML Fundamentals',
+        'AI Agents & Skills',
+        'Cold Chain Operations',
+        'Warehouse Auditing',
+        'GS1 Barcoding',
+        'Linux',
+        'Databases',
         'Git & GitHub',
-        'Docker',
-        'Vite',
-        'Playwright',
-        'Figma',
-        'Linux CLI',
       ],
     },
     {
@@ -88,12 +93,9 @@ export const about: About = {
         'Communication',
         'Teamwork',
         'Leadership',
-        'Empathy',
         'Adaptability',
         'Time Management',
-        'Mentoring',
         'Reliability',
-        'Collaboration',
         'Work Ethic',
       ],
     },
@@ -104,14 +106,11 @@ export const about: About = {
       items: [
         'Learning to Learn',
         'Systems Thinking',
-        'Prioritization',
-        'Deep Work',
-        'Feedback Loops',
-        'Documentation Habit',
-        'Goal Setting',
-        'Self Review',
-        'Knowledge Sharing',
         'Process Improvement',
+        'Documentation Habit',
+        'Deep Work',
+        'Prioritization',
+        'Self Review',
       ],
     },
     {
@@ -126,25 +125,14 @@ export const about: About = {
         'Attention to Detail',
         'Logical Thinking',
         'Research',
-        'Estimation',
         'Troubleshooting',
-        'Memory Techniques',
       ],
     },
     {
       id: 'life',
       label: 'Life Skills',
       icon: 'home-icon',
-      items: [
-        'Cooking',
-        'Personal Finance',
-        'First Aid',
-        'Driving',
-        'Fitness',
-        'Gardening',
-        'Photography',
-        'Home Repair',
-      ],
+      items: ['Side Projects', 'Creative Outlets', 'Continuous Learning', 'Tinkering with Tools', 'Chess'],
     },
   ],
 
@@ -191,18 +179,27 @@ export const resumes: ResumeDoc[] = [
   {
     id: 'creative',
     label: 'CV Creative',
-    blurb: '',
+    blurb: 'One-page visual resume with photo and highlights.',
     variant: 'creative',
     href: null,
   },
   {
     id: 'ats',
     label: 'CV ATS',
-    blurb: '',
+    blurb: 'Two-page ATS-friendly resume with full history.',
     variant: 'ats',
     href: null,
   },
 ]
+
+export const owner = {
+  name: 'Rahmat Wahyu Illahi',
+  role: 'Cold Chain Stock Field Lead',
+  phone: '+62 812 2113 5988',
+  location: 'Bandung, Indonesia',
+  profile:
+    'Field Lead for cold chain stock at PT Bio Farma with 4 years across warehouse and supply chain roles. Builds operational tools with Python, TypeScript, and Go, from warehouse management systems to AI-assisted workflows.',
+}
 
 export type MilestoneCore = 'warehouse' | 'freelance' | 'programming' | 'AI'
 
@@ -219,86 +216,228 @@ function placeholderImage(label: string): string {
   return `data:image/svg+xml,${encodeURIComponent(svg)}`
 }
 
+/**
+ * Urutan kronologis per core. Tahun bertanda approx adalah perkiraan yang
+ * disetujui pemilik (lihat milestones.interview.md); gambar diisi pemilik.
+ */
 export const milestones: Milestone[] = [
   {
-    image: placeholderImage('TODO gambar 1'),
-    year: 'TODO: 2016',
+    image: placeholderImage('warehouse 2022'),
+    year: '2022',
     core: 'warehouse',
-    tags: ['TODO: stok opname'],
+    tags: ['packing workflow'],
     description:
-      'TODO: peran pertamamu di gudang: tanggung jawab harian, sistem yang dipakai, dan apa yang dipelajari soal ketelitian. Tulis satu momen yang paling membentuk caramu bekerja sampai sekarang.',
+      'Started as a Vaccine Packing Operator at PT Bio Farma. Proposed a preparation flow change to my supervisor: staging all packing preparation 30 minutes before the process starts. The proposal was accepted and the packing line finished faster.',
   },
   {
-    image: placeholderImage('TODO gambar 2'),
-    year: 'TODO: 2017',
+    image: placeholderImage('warehouse Dec 2022'),
+    year: 'Dec 2022',
     core: 'warehouse',
-    tags: ['TODO: lead shift'],
+    tags: ['WHO audit prep'],
     description:
-      'TODO: tanggung jawab yang bertambah: memimpin shift, mengatur stok, atau menekan angka selisih. Ceritakan target konkret yang berhasil dicapai dan bagaimana caranya.',
+      'Assigned to the core hygiene team preparing for the WHO audit. Learned cleanliness standards and audit readiness inside out, from daily discipline to inspection-day preparation.',
   },
   {
-    image: placeholderImage('TODO gambar 3'),
-    year: 'TODO: 2018',
+    image: placeholderImage('warehouse Jul 2025'),
+    year: 'Jul 2025',
     core: 'warehouse',
-    tags: ['TODO: layout rak'],
+    tags: ['distributor audit'],
     description:
-      'TODO: perbaikan proses yang kamu usulkan: alur picking, layout rak, atau pencatatan. Jelaskan kondisi sebelum dan sesudahnya, plus dampaknya ke tim.',
+      'Audited the MUP Jakarta distributor warehouse and assessed its readiness.',
   },
   {
-    image: placeholderImage('TODO gambar 4'),
-    year: 'TODO: 2019',
-    core: 'freelance',
-    tags: ['TODO: klien pertama'],
-    description:
-      'TODO: proyek freelance pertama: dari mana kliennya datang dan apa yang dikerjakan. Jujur soal tarif awal dan pelajaran paling mahal dari proyek ini.',
+    image: placeholderImage('warehouse Aug 2025'),
+    year: 'Aug 2025',
+    core: 'warehouse',
+    tags: ['distributor audit'],
+    description: 'Audited the Elo Karsa and Itama Ranoraya distributor warehouses.',
   },
   {
-    image: placeholderImage('TODO gambar 5'),
-    year: 'TODO: 2020',
-    core: 'freelance',
-    tags: ['TODO: retainer'],
+    image: placeholderImage('warehouse Sep 2025'),
+    year: 'Sep 2025',
+    core: 'warehouse',
+    tags: ['distributor audit'],
     description:
-      'TODO: titik ketika freelance jadi serius: klien berulang, kontrak lebih besar, atau niche yang dipilih. Tulis apa yang berubah dari caramu menangani klien.',
+      'Audited the PPI Padang distributor warehouse before its opening. Found 3 major issues that stopped the distributor from proceeding.',
   },
   {
-    image: placeholderImage('TODO gambar 6'),
-    year: 'TODO: 2021',
-    core: 'freelance',
-    tags: ['TODO: proyek besar'],
-    description:
-      'TODO: proyek freelance paling berkesan: masalah kliennya, solusimu, dan hasilnya. Kalau ada angka (omzet klien naik, waktu hemat), taruh di sini.',
-  },
-  {
-    image: placeholderImage('TODO gambar 7'),
-    year: 'TODO: 2022',
+    image: placeholderImage('programming 2023'),
+    year: '2023',
     core: 'programming',
-    tags: ['TODO: bahasa pertama'],
+    tags: ['stock records'],
     description:
-      'TODO: awal masuk programming: bahasa pertama, alasan pindah jalur, dan proyek pertama yang selesai. Ceritakan fase paling frustasi dan cara melewatinya.',
+      'Built a packaging support stock recording system with Excel, Visual Basic, and spreadsheets, synced so every worker updates the same records.',
   },
   {
-    image: placeholderImage('TODO gambar 8'),
-    year: 'TODO: 2023',
+    image: placeholderImage('programming Nov 2023'),
+    year: 'Nov 2023',
     core: 'programming',
-    tags: ['TODO: rilis perdana'],
+    tags: ['data analysis'],
     description:
-      'TODO: aplikasi atau web pertama yang dipakai orang lain: stack yang dipakai dan fitur utamanya. Tulis feedback pengguna yang paling mengubah arah pengembangan.',
+      'Learned Python for data analysis to forecast embalage needs and produced the report from it.',
   },
   {
-    image: placeholderImage('TODO gambar 9'),
-    year: 'TODO: 2024',
-    core: 'AI',
-    tags: ['TODO: workflow AI'],
+    image: placeholderImage('programming 2024'),
+    year: '2024',
+    core: 'programming',
+    tags: ['stock management'],
     description:
-      'TODO: pertama kali memakai AI untuk kerja nyata: use case-nya, tool yang dipakai, dan apa yang berubah dari outputmu. Sebutkan satu workflow yang sekarang tidak bisa dilepas.',
+      'Built an Excel sheet system to manage cold chain product stock as a stock operator.',
   },
   {
-    image: placeholderImage('TODO gambar 10'),
-    year: 'TODO: 2025',
-    core: 'AI',
-    tags: ['TODO: arah baru'],
+    image: placeholderImage('programming Jan 2025'),
+    year: 'Jan 2025',
+    core: 'programming',
+    tags: ['label printing'],
+    description: 'Developed shipping label printing software with Python for Zebra printers.',
+  },
+  {
+    image: placeholderImage('programming Feb 2025'),
+    year: 'Feb 2025',
+    core: 'programming',
+    tags: ['WMS'],
     description:
-      'TODO: posisimu sekarang: bagaimana warehouse, freelance, programming, dan AI bertemu di kerjaanmu hari ini. Tutup dengan arah yang sedang dibangun ke depan.',
+      'Developed a warehouse management system covering the process flow plus a dashboard, built with Python and TypeScript.',
+  },
+  {
+    image: placeholderImage('programming Mar 2025'),
+    year: 'Mar 2025',
+    core: 'programming',
+    tags: ['WMS v2'],
+    description:
+      'As Cold Chain Stock Field Lead, developed WMS version 2 with GS1 barcode integration and Zebra printers, unifying warehouse management and shipping. Built with Python, Go, and TypeScript.',
+  },
+  {
+    image: placeholderImage('programming Apr 2025'),
+    year: 'Apr 2025',
+    core: 'programming',
+    tags: ['AppSheet'],
+    description: 'Developed an AppSheet app for the warehouse management system.',
+  },
+  {
+    image: placeholderImage('programming May 2025'),
+    year: 'May 2025',
+    core: 'programming',
+    tags: ['security report'],
+    description: 'Found a company security gap and reported it to the SOC team.',
+  },
+  {
+    image: placeholderImage('programming Jun 2025'),
+    year: 'Jun 2025',
+    core: 'programming',
+    tags: ['stock dashboard'],
+    description:
+      'Developed an external stock dashboard with Apps Script and spreadsheets.',
+  },
+  {
+    image: placeholderImage('programming Jul 2025'),
+    year: 'Jul 2025',
+    core: 'programming',
+    tags: ['sample ticketing'],
+    description:
+      'Developed sample request ticketing software with Apps Script and React.',
+  },
+  {
+    image: placeholderImage('programming Aug 2025'),
+    year: 'Aug 2025',
+    core: 'programming',
+    tags: ['temperature logger'],
+    description: 'Developed an app for bulk temperature logger configuration.',
+  },
+  {
+    image: placeholderImage('programming Sep 2025'),
+    year: 'Sep 2025',
+    core: 'programming',
+    tags: ['stock opname'],
+    description: 'Developed an AppSheet app for the company stock opname process.',
+  },
+  {
+    image: placeholderImage('freelance Nov 2024'),
+    year: 'Nov 2024',
+    core: 'freelance',
+    tags: ['web scraping'],
+    description:
+      'First freelance project: a Python script scraping X for a thesis on political quantitative analysis. The client came from Fastwork.',
+  },
+  {
+    image: placeholderImage('freelance Jan 2025'),
+    year: 'Early 2025',
+    core: 'freelance',
+    tags: ['data analysis'],
+    description:
+      'Freelance data analysis and cleaning for a medical student thesis on ECG data. This project taught me machine learning fundamentals and sparked my interest in AI.',
+  },
+  {
+    image: placeholderImage('freelance Jan 2025 data'),
+    year: 'Jan 2025',
+    core: 'freelance',
+    tags: ['thesis data'],
+    description:
+      'Full thesis data work for a banking accounting student on stock issuer topics. Learned data gathering, cleaning, processing, and research methodology from scratch, without studying it in college.',
+  },
+  {
+    image: placeholderImage('freelance Mar 2025'),
+    year: 'Mar 2025',
+    core: 'freelance',
+    tags: ['linux setup'],
+    description:
+      'Daily computer installation freelance using Ubuntu Linux. The client came from Facebook.',
+  },
+  {
+    image: placeholderImage('freelance Jul 2026'),
+    year: 'Jul 2026',
+    core: 'freelance',
+    tags: ['thesis data'],
+    description:
+      'Full thesis data work on global economy accounting topics. Learned macro and micro economics deeply along the way.',
+  },
+  {
+    image: placeholderImage('AI late 2024'),
+    year: 'Late 2024',
+    core: 'AI',
+    tags: ['first contact'],
+    description:
+      'First got interested in AI through ChatGPT while it boomed. Only used it for asking questions, not for real work yet.',
+  },
+  {
+    image: placeholderImage('AI early 2025'),
+    year: 'Early 2025',
+    core: 'AI',
+    tags: ['learning'],
+    description:
+      'Started using Gemini to push my learning. Joined NotebookLM while it was still waitlisted, took notes there, and learned fast from it.',
+  },
+  {
+    image: placeholderImage('AI mid 2025'),
+    year: 'Mid 2025',
+    core: 'AI',
+    tags: ['research workflow'],
+    description:
+      'Built an analysis workflow and learned to write AI skills. Created a custom skill so AI scrapes real sources with verifiable, accessible citations. It gets used.',
+  },
+  {
+    image: placeholderImage('AI Aug 2025'),
+    year: 'Aug 2025',
+    core: 'AI',
+    tags: ['coding workflow'],
+    description:
+      'Discovered the OpenCode AI harness and built an AI coding workflow around it, learning to create custom skills, MCPs, plugins, and agents.',
+  },
+  {
+    image: placeholderImage('AI Sep 2025'),
+    year: 'Sep 2025',
+    core: 'AI',
+    tags: ['voice agent'],
+    description:
+      'Built a dedicated agent for stock opname input: I speak the item, location, and quantity, and the agent enters it into the Apps Script API. Basically a bot.',
+  },
+  {
+    image: placeholderImage('AI Sep 2026'),
+    year: 'Sep 2026',
+    core: 'AI',
+    tags: ['AI workspace'],
+    description:
+      'Built an AI workspace with several divisions. The most interesting one is the creative division, which automates content, running on the Hermess harness.',
   },
 ]
 
@@ -306,6 +445,8 @@ export type ExperienceItem = {
   icon: string
   year: string
   name: string
+  /** CV bullets, dipakai CvPaper. Opsional karena education tidak memakainya. */
+  bullets?: string[]
 }
 
 /** Order: newest to oldest. Icon = image path (/logos/...) or symbol id in public/icons.svg */
@@ -319,28 +460,52 @@ export const workExperience: ExperienceItem[] = [
     icon: '/logos/biofarma.png',
     year: 'Dec 2024–Present',
     name: 'Cold Chain Stock Field Lead · PT Bio Farma',
+    bullets: [
+      'Developed WMS v2 with GS1 barcode integration and Zebra printers using Python, Go, and TypeScript, unifying warehouse and shipping.',
+      'Audited distributor warehouses; 3 major findings stopped PPI Padang from opening.',
+      'Built a voice-driven stock opname agent that enters spoken counts into the Apps Script API.',
+      'Reported a company security gap to the SOC team.',
+    ],
   },
   {
     icon: '/logos/biofarma.png',
     year: 'Oct–Nov 2024',
     name: 'Cold Chain Product Stock Staff · PT Bio Farma',
+    bullets: ['Promoted from operator after one year of cold chain stock operations.'],
   },
   {
     icon: '/logos/biofarma.png',
     year: 'Sep 2023–Sep 2024',
     name: 'Cold Chain Product Stock Operator · PT Bio Farma',
+    bullets: [
+      'Built an Excel sheet system to manage cold chain product stock.',
+      'Handled daily stock recording for cold chain products.',
+    ],
   },
   {
     icon: '/logos/biofarma.png',
     year: 'Jan–Aug 2023',
     name: 'Packaging Support Operator · PT Bio Farma',
+    bullets: [
+      'Built an embalage stock recording system with Excel, VBA, and spreadsheets synced across workers.',
+      'Forecast embalage needs with Python data analysis and produced the report.',
+    ],
   },
   {
     icon: '/logos/biofarma.png',
     year: 'Aug–Dec 2022',
     name: 'Vaccine Packing Operator · PT Bio Farma',
+    bullets: [
+      'Proposed staging packing preparation 30 minutes early; accepted, and the line finished faster.',
+      'Joined the core hygiene team preparing for the WHO audit.',
+    ],
   },
-  { icon: '/logos/b4t.png', year: 'Aug–Dec 2021', name: 'Intern · B4T' },
+  {
+    icon: '/logos/b4t.png',
+    year: 'Aug–Dec 2021',
+    name: 'Intern · B4T',
+    bullets: ['Completed a 5-month internship.'],
+  },
 ]
 
 export type Certification = {

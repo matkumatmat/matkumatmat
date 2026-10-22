@@ -213,18 +213,6 @@
 /* ==========================================================
    5. Motion
    ========================================================== */
-@keyframes ornament-float {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) rotate(var(--ornament-rot, 0deg));
-  }
-
-  50% {
-    transform: translate3d(var(--ornament-drift-x, 0px), var(--ornament-drift-y, 0px), 0)
-      rotate(calc(var(--ornament-rot, 0deg) + var(--ornament-spin, 0deg)));
-  }
-}
-
 @keyframes cv-modal-backdrop {
   from {
     opacity: 0;
@@ -259,15 +247,55 @@ body:has(dialog[open]) {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ornament {
-    animation: none !important;
-  }
-
   dialog::backdrop {
     animation: none !important;
   }
 
   dialog[open].cv-modal-paper {
     animation: none !important;
+  }
+}
+
+/* ==========================================================
+   6. Print: unduh CV sebagai PDF A4
+   #cv-print-root hidup di luar #root (portal) dan cuma tampil
+   saat print; tiap .cv-print-page jadi 1 halaman A4.
+   ========================================================== */
+#cv-print-root {
+  display: none;
+}
+
+.cv-print-page {
+  width: 100%;
+  max-width: 182mm;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.cv-print-break {
+  break-after: page;
+  page-break-after: always;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body > *:not(#cv-print-root) {
+    display: none !important;
+  }
+
+  #cv-print-root {
+    display: block !important;
   }
 }

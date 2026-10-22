@@ -1,6 +1,9 @@
+import Buttons from './section/Buttons'
 import Code from './section/Code'
+import DesignDoc from './section/DesignDoc'
 import Hero from './section/Hero'
 import Palette from './section/Palette'
+import Theme from './section/Theme'
 import TypeScale from './section/TypeScale'
 
 export default function Gallery() {
@@ -9,7 +12,10 @@ export default function Gallery() {
       <Hero />
       <Palette />
       <TypeScale />
+      <Theme />
+      <Buttons />
       <Code />
+      <DesignDoc />
     </main>
   )
 }

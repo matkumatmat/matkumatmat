@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages SPA fallback: Pages has no rewrite rules, so a direct
+      // visit to /<repo>/<route> lands here. Re-encode the route into the
+      // query string and bounce back to index, which decodes it.
+      ;(() => {
+        const segmentKeep = 1 // /<repo>/ counts as one segment
+        const l = window.location
+        const segments = l.pathname.split('/').filter(Boolean)
+        const base = '/' + segments.slice(0, segmentKeep).join('/') + '/'
+        const rest = segments.slice(segmentKeep).join('/')
+        const query = l.search
+          ? '&' + l.search.slice(1).replace(/&/g, '~and~')
+          : ''
+        l.replace(base + '?/' + rest + query + l.hash)
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>

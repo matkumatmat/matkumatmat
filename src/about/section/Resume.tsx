@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import CvPaper from '../components/CvPaper'
+import { createPortal } from 'react-dom'
+import CvPaper, { CvPrintSheet } from '../components/CvPaper'
 import { resumes } from '../data'
 
 function CloseIcon() {
@@ -14,6 +15,11 @@ export default function Resume() {
   const [activeIndex, setActiveIndex] = useState<number>(0)
   const [open, setOpen] = useState<boolean>(false)
   const dialogRef = useRef<HTMLDialogElement>(null)
+  const [printRoot] = useState(() => {
+    const el = document.createElement('div')
+    el.id = 'cv-print-root'
+    return el
+  })
   const active = resumes[activeIndex]
 
   useEffect(() => {
@@ -25,6 +31,13 @@ export default function Resume() {
       dialog.close()
     }
   }, [open])
+
+  useEffect(() => {
+    document.body.appendChild(printRoot)
+    return () => {
+      document.body.removeChild(printRoot)
+    }
+  }, [printRoot])
 
   return (
     <section>
@@ -48,7 +61,7 @@ export default function Resume() {
                   key={doc.id}
                   type="button"
                   onClick={() => (isFront ? setOpen(true) : setActiveIndex(i))}
-                  aria-label={isFront ? `Buka ${doc.label}` : `Tampilkan ${doc.label} di depan`}
+                  aria-label={isFront ? `Open ${doc.label}` : `Bring ${doc.label} to front`}
                   aria-haspopup={isFront ? 'dialog' : undefined}
                   aria-expanded={isFront ? open : undefined}
                   className={[
@@ -94,7 +107,7 @@ export default function Resume() {
                       isFront ? 'bg-brand text-brand-fg' : 'border border-line bg-surface text-fg',
                     ].join(' ')}
                   >
-                    {isFront ? 'Buka CV' : 'Tampilkan'}
+                    {isFront ? 'Open CV' : 'Show'}
                   </span>
                 </button>
               )
@@ -128,7 +141,7 @@ export default function Resume() {
         <button
           type="button"
           onClick={() => dialogRef.current?.close()}
-          aria-label="Tutup pratinjau CV"
+          aria-label="Close CV preview"
           className="absolute right-3 top-3 z-10 rounded-full p-2 text-fg-muted transition-colors hover:bg-surface-2 hover:text-fg motion-reduce:transition-none"
         >
           <CloseIcon />
@@ -178,19 +191,22 @@ export default function Resume() {
                 download
                 className="rounded-full bg-brand px-4 py-2 text-small font-medium text-brand-fg transition hover:opacity-90 motion-reduce:transition-none"
               >
-                Unduh PDF
+                Download PDF
               </a>
             ) : (
-              <span
-                aria-disabled="true"
-                className="cursor-not-allowed rounded-full border border-line px-4 py-2 text-small text-fg-muted opacity-60"
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="rounded-full bg-brand px-4 py-2 text-small font-medium text-brand-fg transition hover:opacity-90 motion-reduce:transition-none"
               >
-                PDF belum tersedia
-              </span>
+                Download PDF
+              </button>
             )}
           </div>
         </div>
       </dialog>
+
+      {createPortal(<CvPrintSheet variant={active.variant} />, printRoot)}
     </section>
   )
 }
