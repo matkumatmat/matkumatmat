@@ -1,14 +1,15 @@
 import { education, workExperience, type ExperienceItem } from '../data'
+import { asset, iconHref } from '../../lib/asset'
 
 function ItemIcon({ icon, label }: { icon: string; label: string }) {
   const isImage = icon.startsWith('/') || icon.startsWith('http')
   return (
     <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-line bg-surface-2 text-fg">
       {isImage ? (
-        <img src={icon} alt="" className="h-full w-full object-contain p-1.5" />
+        <img src={asset(icon)} alt="" className="h-full w-full object-contain p-1.5" />
       ) : (
         <svg aria-hidden="true" fill="currentColor" className="h-6 w-6">
-          <use href={`/icons.svg#${icon}`} />
+          <use href={iconHref(icon)} />
         </svg>
       )}
       <span className="sr-only">{label}</span>

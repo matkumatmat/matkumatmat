@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import { about, type SkillType } from '../data'
+import { iconHref } from '../../lib/asset'
 
 const pillStyles: Record<SkillType, string> = {
   hard: 'border-transparent bg-brand text-brand-fg',
@@ -52,7 +53,7 @@ export default function Skills() {
               className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-label font-semibold ${pillStyles[group.id]}`}
             >
               <svg aria-hidden="true" fill="currentColor" className="h-3.5 w-3.5">
-                <use href={`/icons.svg#${group.icon}`} />
+                <use href={iconHref(group.icon)} />
               </svg>
               {group.label}
             </span>

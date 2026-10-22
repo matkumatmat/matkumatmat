@@ -1,6 +1,7 @@
 import { useRef, type CSSProperties } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { iconHref } from '../../lib/asset'
 
 gsap.registerPlugin(useGSAP)
 
@@ -122,7 +123,7 @@ export default function FloatingOrnaments() {
             } as CSSProperties
           }
         >
-          <use href={`/icons.svg#ms-${ornament.symbol}-icon`} />
+          <use href={iconHref(`ms-${ornament.symbol}-icon`)} />
         </svg>
       ))}
     </div>

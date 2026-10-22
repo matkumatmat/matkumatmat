@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { milestones, type Milestone, type MilestoneCore } from '../data'
+import { asset, iconHref } from '../../lib/asset'
 
 const cores: { id: MilestoneCore; label: string; icon: string }[] = [
   { id: 'warehouse', label: 'Warehouse', icon: 'ms-warehouse-icon' },
@@ -52,7 +53,7 @@ function MilestoneCard({
     >
       <div className="relative overflow-hidden rounded-xl">
         <img
-          src={item.image}
+          src={asset(item.image)}
           alt={`${item.year} ${item.core} milestone`}
           loading="lazy"
           className="h-52 w-full object-cover transition-[height] duration-300 ease-out group-hover:h-32 group-focus-within:h-32 motion-reduce:transition-none"
@@ -180,7 +181,7 @@ export default function Milestone() {
                     }
                   >
                     <svg fill="currentColor" className={isActive ? 'h-4 w-4' : 'h-5 w-5'}>
-                      <use href={`/icons.svg#${core.icon}`} />
+                      <use href={iconHref(core.icon)} />
                     </svg>
                   </span>
                 </button>

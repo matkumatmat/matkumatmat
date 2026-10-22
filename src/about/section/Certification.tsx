@@ -1,4 +1,5 @@
 import { certifications, type Certification } from '../data'
+import { asset, iconHref } from '../../lib/asset'
 
 function ExternalIcon() {
   return (
@@ -26,10 +27,10 @@ function IssuerMark({ logo, issuer }: { logo: string; issuer: string }) {
   return (
     <span className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-brand font-mono text-heading text-brand-fg">
       {isImage ? (
-        <img src={logo} alt="" className="h-full w-full object-contain p-1.5" />
+        <img src={asset(logo)} alt="" className="h-full w-full object-contain p-1.5" />
       ) : logo ? (
         <svg aria-hidden="true" fill="currentColor" className="h-7 w-7">
-          <use href={`/icons.svg#${logo}`} />
+          <use href={iconHref(logo)} />
         </svg>
       ) : (
         <span aria-hidden="true">{initials}</span>

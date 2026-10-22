@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { about } from '../data'
+import { iconHref } from '../../lib/asset'
 
 async function copyText(text: string): Promise<boolean> {
   try {
@@ -82,7 +83,7 @@ function EmailCard({
             className="flex shrink-0 items-center gap-1.5 rounded-full border border-line px-3.5 py-1.5 text-small transition-colors hover:bg-surface-2 motion-reduce:transition-none"
           >
             <svg aria-hidden="true" className="h-4 w-4">
-              <use href={`/icons.svg#${status === 'copied' ? 'check-icon' : 'copy-icon'}`} />
+              <use href={iconHref(status === 'copied' ? 'check-icon' : 'copy-icon')} />
             </svg>
             {status === 'copied' ? 'Copied' : status === 'failed' ? 'Failed' : 'Copy'}
           </button>
@@ -127,7 +128,7 @@ function SocialCard({
           <p className="flex items-center gap-2.5">
             <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-line bg-surface-2 text-fg">
               <svg aria-hidden="true" fill="currentColor" className="h-5 w-5">
-                <use href={`/icons.svg#${social.icon}`} />
+                <use href={iconHref(social.icon)} />
               </svg>
             </span>
             <span className="text-label uppercase text-fg-muted">{social.label}</span>
