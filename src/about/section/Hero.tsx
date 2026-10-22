@@ -1,3 +1,5 @@
+import FloatingOrnaments from '../../components/ui/FloatingOrnaments'
+
 export default function Hero() {
   return (
     <section className="relative isolate w-full h-[500px] overflow-hidden rounded-xl md:rounded-2xl bg-brand mb-2">
@@ -5,6 +7,8 @@ export default function Hero() {
 
       <div className="absolute inset-y-0 right-0 w-[38%] bg-accent">
       </div>
+
+      <FloatingOrnaments />
 
       <div className="absolute left-8 top-1/2 w-[30%] -translate-y-1/2">
         <p className="text-label uppercase text-accent-text">Portfolio</p>
@@ -32,36 +36,9 @@ export default function Hero() {
         </a>
       </div>
 
-      {/*<img
-        src="/me-facing.webp"
-        alt="Foto profil"
-        className="absolute -bottom-30 left-1/2 h-[110%] w-auto -translate-x-1/2 object-contain object-bottom"
-      />*/}
-      {/*<img
-        src="/me-facing.webp"
-        alt="Foto profil"
-        className="absolute -bottom-30 left-1/2 h-[110%] w-auto -translate-x-1/2 object-contain object-bottom drop-shadow-[2px_0_0_#fff,-2px_0_0_#fff,0_2px_0_#fff,0_-2px_0_#fff]"
-      />*/}
-
-      <svg aria-hidden focusable="false" className="absolute h-0 w-0 overflow-hidden">
-        <defs>
-          <filter id="portrait-outline" x="-10%" y="-10%" width="120%" height="120%"
-                  color-interpolation-filters="sRGB">
-            <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="spread" />
-            <feFlood floodColor="#fff" floodOpacity="1" result="color" />
-            <feComposite in="color" in2="spread" operator="in" result="ring" />
-            <feMerge>
-              <feMergeNode in="ring" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-      </svg>
-
       <img
-        src="/me-facing.webp"
+        src="/me-facing-clean.webp"
         alt="Foto profil"
-        style={{ filter: 'url(#portrait-outline)' }}
         className="absolute -bottom-30 left-1/2 h-[110%] w-auto -translate-x-1/2 object-contain object-bottom"
       />
     </section>

@@ -141,4 +141,93 @@
   .display-tight {
     font-variation-settings: "wdth" 92;
   }
+
+  /* Hiasan floating di hero */
+  .ornament {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Titik-titik halus di canvas Resume deck */
+  .dot-grid {
+    background-image: radial-gradient(
+      color-mix(in oklab, var(--fg) 14%, transparent) 1px,
+      transparent 1.4px
+    );
+    background-size: 18px 18px;
+    background-position: center;
+    -webkit-mask-image: radial-gradient(
+      ellipse 85% 85% at 50% 50%,
+      #000 45%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 85% 85% at 50% 50%,
+      #000 45%,
+      transparent 100%
+    );
+  }
+}
+
+/* ==========================================================
+   5. Motion
+   ========================================================== */
+@keyframes ornament-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(var(--ornament-rot, 0deg));
+  }
+
+  50% {
+    transform: translate3d(var(--ornament-drift-x, 0px), var(--ornament-drift-y, 0px), 0)
+      rotate(calc(var(--ornament-rot, 0deg) + var(--ornament-spin, 0deg)));
+  }
+}
+
+@keyframes cv-modal-backdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cv-modal-paper {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+dialog::backdrop {
+  animation: cv-modal-backdrop 0.25s ease-out both;
+}
+
+dialog[open].cv-modal-paper {
+  animation: cv-modal-paper 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Scroll lock pas modal CV terbuka */
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ornament {
+    animation: none !important;
+  }
+
+  dialog::backdrop {
+    animation: none !important;
+  }
+
+  dialog[open].cv-modal-paper {
+    animation: none !important;
+  }
 }

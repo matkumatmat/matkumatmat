@@ -56,3 +56,61 @@ export const about: About = {
     ],
   },
 }
+
+export type ResumeDoc = {
+  id: 'creative' | 'ats'
+  label: string
+  blurb: string
+  variant: 'creative' | 'ats'
+  href: string | null
+}
+
+export const resumes: ResumeDoc[] = [
+  {
+    id: 'creative',
+    label: 'CV Creative',
+    blurb: '',
+    variant: 'creative',
+    href: null,
+  },
+  {
+    id: 'ats',
+    label: 'CV ATS',
+    blurb: '',
+    variant: 'ats',
+    href: null,
+  },
+]
+
+export type Milestone = {
+  year: string
+  title: string
+  description: string
+}
+
+export const milestones: Milestone[] = [
+  {
+    year: 'TODO: 2021',
+    title: 'TODO: judul milestone pertama',
+    description:
+      'TODO: deskripsi singkat — apa yang terjadi, peranmu, dan hasil yang dicapai.',
+  },
+  {
+    year: 'TODO: 2022',
+    title: 'TODO: judul milestone kedua',
+    description:
+      'TODO: deskripsi singkat — proyek, pivot, atau pencapaian yang menandai babak baru.',
+  },
+  {
+    year: 'TODO: 2023',
+    title: 'TODO: judul milestone ketiga',
+    description:
+      'TODO: deskripsi singkat — dampak nyata: angka, pengguna, atau perubahan yang kamu bawa.',
+  },
+  {
+    year: 'TODO: 2024',
+    title: 'TODO: judul milestone keempat',
+    description:
+      'TODO: deskripsi singkat — posisi kamu sekarang dan arah yang sedang dibangun.',
+  },
+]

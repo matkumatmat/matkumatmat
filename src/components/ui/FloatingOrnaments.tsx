@@ -43,8 +43,8 @@ const ORNAMENTS = SLOTS.map((slot) => ({
   ...slot,
   size: Math.round(randomBetween(slot.min, slot.max)),
   opacity: randomBetween(
-    slot.tone === 'dark' ? 0.18 : 0.08,
-    slot.tone === 'dark' ? 0.34 : 0.16,
+    slot.tone === 'dark' ? 0.18 : 0.1,
+    slot.tone === 'dark' ? 0.34 : 0.2,
   ),
   duration: randomBetween(6, 13),
   delay: randomBetween(0, 7),
