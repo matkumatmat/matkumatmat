@@ -149,6 +149,46 @@
     user-select: none;
   }
 
+  /* Kaca pembaur Intro: pekat di belakang kartu, memudar ke arah foto.
+     Mobile: kartu di bawah, kaca memudar ke atas.
+     Desktop: kartu di kanan, kaca memudar dari kanan ke kiri
+     dengan stop 100-75-50-20 selebar section. */
+  .intro-glass {
+    background-image: linear-gradient(
+      to top,
+      var(--surface) 0%,
+      color-mix(in oklab, var(--surface) 75%, transparent) 35%,
+      color-mix(in oklab, var(--surface) 50%, transparent) 60%,
+      transparent 90%
+    );
+    -webkit-mask-image: linear-gradient(to top, black 45%, transparent 90%);
+    mask-image: linear-gradient(to top, black 45%, transparent 90%);
+  }
+
+  @media (min-width: 768px) {
+    .intro-glass {
+      background-image: linear-gradient(
+        to left,
+        var(--surface) 0%,
+        color-mix(in oklab, var(--surface) 75%, transparent) 38%,
+        color-mix(in oklab, var(--surface) 50%, transparent) 62%,
+        color-mix(in oklab, var(--surface) 20%, transparent) 100%
+      );
+      -webkit-mask-image: linear-gradient(to left, black 35%, transparent 92%);
+      mask-image: linear-gradient(to left, black 35%, transparent 92%);
+    }
+  }
+
+  /* Scroll tanpa scrollbar terlihat (kolom Experience) */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Titik-titik halus di canvas Resume deck */
   .dot-grid {
     background-image: radial-gradient(

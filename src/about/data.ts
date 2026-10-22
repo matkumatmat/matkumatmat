@@ -15,7 +15,8 @@ export type AboutLink = {
 
 export type About = {
   heading: string
-  lede: string
+  kicker: string
+  lede: string[]
   blocks: AboutBlock[]
   skills: string[]
   contact: {
@@ -25,8 +26,13 @@ export type About = {
 }
 
 export const about: About = {
-  heading: 'TODO: judul halaman',
-  lede: 'TODO: satu kalimat ringkas yang menjelaskan siapa kamu dan fokus kerjamu.',
+  heading: 'Lorem ipsum dolor sit amet',
+  kicker: 'Lorem ipsum dolor',
+  lede: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+  ],
 
   blocks: [
     {
@@ -178,4 +184,45 @@ export const milestones: Milestone[] = [
     description:
       'TODO: posisimu sekarang: bagaimana warehouse, freelance, programming, dan AI bertemu di kerjaanmu hari ini. Tutup dengan arah yang sedang dibangun ke depan.',
   },
+]
+
+export type ExperienceItem = {
+  icon: string
+  year: string
+  name: string
+}
+
+/** Urutan: terbaru ke terlama. Icon = path gambar (/logos/...) atau id symbol di public/icons.svg */
+export const education: ExperienceItem[] = [
+  { icon: '/logos/smkn7.png', year: '2019–2022', name: 'Kimia Analisis · SMKN 7 Bandung' },
+]
+
+/** Urutan: terbaru ke terlama. Icon = path gambar (/logos/...) atau id symbol di public/icons.svg */
+export const workExperience: ExperienceItem[] = [
+  {
+    icon: '/logos/biofarma.png',
+    year: 'Des 2024–Sekarang',
+    name: 'Lead Field Stok Cold Chain · PT Bio Farma',
+  },
+  {
+    icon: '/logos/biofarma.png',
+    year: 'Okt–Nov 2024',
+    name: 'Staff Stok Produk Cold Chain · PT Bio Farma',
+  },
+  {
+    icon: '/logos/biofarma.png',
+    year: 'Sep 2023–Sep 2024',
+    name: 'Pelaksana Stok Produk Cold Chain · PT Bio Farma',
+  },
+  {
+    icon: '/logos/biofarma.png',
+    year: 'Jan–Agu 2023',
+    name: 'Pelaksana Penunjang Pengepakan · PT Bio Farma',
+  },
+  {
+    icon: '/logos/biofarma.png',
+    year: 'Agu–Des 2022',
+    name: 'Pelaksana Packing Vaksin · PT Bio Farma',
+  },
+  { icon: '/logos/b4t.png', year: 'Agu–Des 2021', name: 'Magang · B4T' },
 ]
