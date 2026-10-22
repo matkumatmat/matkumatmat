@@ -6,7 +6,7 @@ import Hero from './section/Hero'
 
 export default function About() {
   return (
-    <main className="mx-auto flex max-w-5xl flex-col gap-12 px-6 py-16">
+    <main className=" flex flex-col px-6 gap-12 pt-6 py-10">
       <Hero/>
       <Intro />
       <Story />
