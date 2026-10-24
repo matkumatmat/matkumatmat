@@ -26,7 +26,7 @@ const keywordPattern = new RegExp(
 function highlight(text: string): ReactNode[] {
   return text.split(keywordPattern).map((part, i) =>
     i % 2 === 1 ? (
-      <mark key={i} className="bg-accent px-1 text-accent-fg">
+      <mark key={i} className="bg-accent px-1 text-accent-fg [box-decoration-break:clone]">
         {part}
       </mark>
     ) : (

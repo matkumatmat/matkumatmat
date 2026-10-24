@@ -1,8 +1,3 @@
-/**
- * Isi halaman About di sini — About.tsx cuma nge-render datanya.
- * Ganti semua "TODO:" dengan konten aslimu.
- */
-
 export type AboutBlock = {
   title: string
   paragraphs: string[]
@@ -38,28 +33,30 @@ export type About = {
 
 export const about: About = {
   heading: 'Operator by profession, builder by habit.',
-  kicker: 'Cold Chain Lead · Developer · AI Practitioner',
+  kicker: 'Cold Chain Stock Field Lead · Developer · AI Practitioner',
   lede: [
     'I lead cold chain stock operations at PT Bio Farma, with 4 years across warehouse and supply chain roles. I started as a packing operator in 2022 and worked up to field lead, through WHO audit preparation and distributor audits as a warehouse auditor.',
     'Along the way I started building the tools I needed instead of waiting for them: stock recording systems in Excel, a warehouse management system with GS1 barcode integration backed by a database, dashboards, and ticketing apps, using Python, TypeScript, Go, and AppSheet. Between shifts I work as a freelance data analyst, from web scraping to thesis datasets.',
-    'Since 2024 I have folded AI into everything: research workflows with verifiable citations, coding agents, a voice-driven stock opname bot, and a multi-division AI workspace. Years of operations work trained my logical thinking, and that is what my decision making runs on.',
+    'Since 2025 I have used AI heavily in my work: research workflows with verifiable citations, coding agents, a voice-driven stock opname agent, and a multi-division AI workspace.',
   ],
 
   blocks: [
     {
-      title: 'TODO: judul blok pertama',
+      title: 'How I work',
       paragraphs: [
-        'TODO: paragraf pembuka.',
-        'TODO: paragraf lanjutan yang menjelaskan konteks, pendekatan, atau motivation.',
+        'I start from the work in front of me. A packing line got a 30-minute preparation window, stock records moved into one synced system, and shipping labels came out of software built for Zebra printers. Each change was small and tested in the real workflow before I built on it.',
+        'The same habit shapes how I audit. A distributor audit is about finding what blocks a safe start, and the PPI Padang audit surfaced three major issues before the warehouse opened.',
       ],
     },
     {
-      title: 'TODO: judul blok kedua',
-      paragraphs: ['TODO: paragraf pembuka.', 'TODO: paragraf penutup.'],
+      title: 'What I am building now',
+      paragraphs: [
+        'Most of my current work is AI tooling: coding workflows built on agents, skills, and MCPs, a voice-driven stock opname agent, and a multi-division AI workspace whose creative division automates content.',
+        'The warehouse is where these tools get tested, so each one has to work under real operating conditions.',
+      ],
     },
   ],
 
-  // Diisi dari hasil interview pemilik.
   skills: [
     {
       id: 'hard',
@@ -70,69 +67,44 @@ export const about: About = {
         'TypeScript',
         'Go',
         'React',
+        'Apps Script & AppSheet',
         'Excel & VBA',
-        'AppSheet',
-        'Apps Script',
-        'Data Analysis',
-        'Web Scraping',
-        'ML Fundamentals',
+        'Data Analysis & Scraping',
         'AI Agents & Skills',
         'Cold Chain Operations',
         'Warehouse Auditing',
         'GS1 Barcoding',
-        'Linux',
-        'Databases',
-        'Git & GitHub',
       ],
     },
     {
       id: 'soft',
       label: 'Soft Skills',
       icon: 'chat-icon',
-      items: [
-        'Communication',
-        'Teamwork',
-        'Leadership',
-        'Adaptability',
-        'Time Management',
-        'Reliability',
-        'Work Ethic',
-      ],
+      items: ['Leadership', 'Communication', 'Teamwork', 'Adaptability'],
     },
     {
       id: 'meta',
       label: 'Meta Skills',
       icon: 'layers-icon',
-      items: [
-        'Learning to Learn',
-        'Systems Thinking',
-        'Process Improvement',
-        'Documentation Habit',
-        'Deep Work',
-        'Prioritization',
-        'Self Review',
-      ],
+      items: ['Systems Thinking', 'Process Improvement', 'Learning to Learn', 'Documentation Habit'],
     },
     {
       id: 'cognitive',
       label: 'Cognitive Skills',
       icon: 'bulb-icon',
       items: [
-        'Critical Thinking',
         'Analytical Reasoning',
         'Pattern Recognition',
-        'Decision Making',
-        'Attention to Detail',
-        'Logical Thinking',
-        'Research',
         'Troubleshooting',
+        'Research',
+        'Attention to Detail',
       ],
     },
     {
       id: 'life',
       label: 'Life Skills',
       icon: 'home-icon',
-      items: ['Side Projects', 'Creative Outlets', 'Continuous Learning', 'Tinkering with Tools', 'Chess'],
+      items: ['Side Projects', 'Tinkering with Tools', 'Chess'],
     },
   ],
 
@@ -216,10 +188,6 @@ function placeholderImage(label: string): string {
   return `data:image/svg+xml,${encodeURIComponent(svg)}`
 }
 
-/**
- * Urutan kronologis per core. Tahun bertanda approx adalah perkiraan yang
- * disetujui pemilik (lihat milestones.interview.md); gambar diisi pemilik.
- */
 export const milestones: Milestone[] = [
   {
     image: placeholderImage('warehouse 2022'),
@@ -227,7 +195,7 @@ export const milestones: Milestone[] = [
     core: 'warehouse',
     tags: ['packing workflow'],
     description:
-      'Started as a Vaccine Packing Operator at PT Bio Farma. Proposed a preparation flow change to my supervisor: staging all packing preparation 30 minutes before the process starts. The proposal was accepted and the packing line finished faster.',
+      'Started as a Vaccine Packing Operator at PT Bio Farma. Proposed staging all packing preparation 30 minutes before the process starts. The supervisor accepted it and the packing line finished faster.',
   },
   {
     image: placeholderImage('warehouse Dec 2022'),
@@ -235,15 +203,14 @@ export const milestones: Milestone[] = [
     core: 'warehouse',
     tags: ['WHO audit prep'],
     description:
-      'Assigned to the core hygiene team preparing for the WHO audit. Learned cleanliness standards and audit readiness inside out, from daily discipline to inspection-day preparation.',
+      'Joined the core hygiene team preparing for the WHO audit, covering cleanliness standards and inspection-day readiness.',
   },
   {
     image: placeholderImage('warehouse Jul 2025'),
     year: 'Jul 2025',
     core: 'warehouse',
     tags: ['distributor audit'],
-    description:
-      'Audited the MUP Jakarta distributor warehouse and assessed its readiness.',
+    description: 'Audited the MUP Jakarta distributor warehouse and assessed its readiness.',
   },
   {
     image: placeholderImage('warehouse Aug 2025'),
@@ -266,15 +233,15 @@ export const milestones: Milestone[] = [
     core: 'programming',
     tags: ['stock records'],
     description:
-      'Built a packaging support stock recording system with Excel, Visual Basic, and spreadsheets, synced so every worker updates the same records.',
+      'Built a packaging materials stock recording system with Excel, VBA, and spreadsheets, synced so every worker updates the same records.',
   },
   {
-    image: placeholderImage('programming Nov 2023'),
-    year: 'Nov 2023',
+    image: placeholderImage('programming 2023 python'),
+    year: '2023',
     core: 'programming',
     tags: ['data analysis'],
     description:
-      'Learned Python for data analysis to forecast embalage needs and produced the report from it.',
+      'Learned Python for data analysis to forecast packaging materials needs and produced the report from it.',
   },
   {
     image: placeholderImage('programming 2024'),
@@ -326,16 +293,14 @@ export const milestones: Milestone[] = [
     year: 'Jun 2025',
     core: 'programming',
     tags: ['stock dashboard'],
-    description:
-      'Developed an external stock dashboard with Apps Script and spreadsheets.',
+    description: 'Developed an external stock dashboard with Apps Script and spreadsheets.',
   },
   {
     image: placeholderImage('programming Jul 2025'),
     year: 'Jul 2025',
     core: 'programming',
     tags: ['sample ticketing'],
-    description:
-      'Developed sample request ticketing software with Apps Script and React.',
+    description: 'Developed sample request ticketing software with Apps Script and React.',
   },
   {
     image: placeholderImage('programming Aug 2025'),
@@ -360,20 +325,20 @@ export const milestones: Milestone[] = [
       'First freelance project: a Python script scraping X for a thesis on political quantitative analysis. The client came from Fastwork.',
   },
   {
-    image: placeholderImage('freelance Jan 2025'),
-    year: 'Early 2025',
-    core: 'freelance',
-    tags: ['data analysis'],
-    description:
-      'Freelance data analysis and cleaning for a medical student thesis on ECG data. This project taught me machine learning fundamentals and sparked my interest in AI.',
-  },
-  {
     image: placeholderImage('freelance Jan 2025 data'),
     year: 'Jan 2025',
     core: 'freelance',
     tags: ['thesis data'],
     description:
-      'Full thesis data work for a banking accounting student on stock issuer topics. Learned data gathering, cleaning, processing, and research methodology from scratch, without studying it in college.',
+      'Full thesis data work for a banking accounting student on stock issuer topics. Learned data gathering, cleaning, processing, and research methodology on the job, without formal coursework.',
+  },
+  {
+    image: placeholderImage('freelance early 2025'),
+    year: 'Early 2025',
+    core: 'freelance',
+    tags: ['data analysis'],
+    description:
+      'Data analysis and cleaning for a medical student thesis on ECG data. The project introduced me to machine learning fundamentals and started my interest in AI.',
   },
   {
     image: placeholderImage('freelance Mar 2025'),
@@ -389,7 +354,7 @@ export const milestones: Milestone[] = [
     core: 'freelance',
     tags: ['thesis data'],
     description:
-      'Full thesis data work on global economy accounting topics. Learned macro and micro economics deeply along the way.',
+      'Full thesis data work on global economy accounting topics, which required learning macro and micro economics in depth.',
   },
   {
     image: placeholderImage('AI late 2024'),
@@ -397,7 +362,7 @@ export const milestones: Milestone[] = [
     core: 'AI',
     tags: ['first contact'],
     description:
-      'First got interested in AI through ChatGPT while it boomed. Only used it for asking questions, not for real work yet.',
+      'First tried ChatGPT, using it only for questions and not yet for real work.',
   },
   {
     image: placeholderImage('AI early 2025'),
@@ -405,7 +370,7 @@ export const milestones: Milestone[] = [
     core: 'AI',
     tags: ['learning'],
     description:
-      'Started using Gemini to push my learning. Joined NotebookLM while it was still waitlisted, took notes there, and learned fast from it.',
+      'Started using Gemini to speed up my learning. Joined NotebookLM while it was still waitlisted and used it for notes and study.',
   },
   {
     image: placeholderImage('AI mid 2025'),
@@ -413,7 +378,7 @@ export const milestones: Milestone[] = [
     core: 'AI',
     tags: ['research workflow'],
     description:
-      'Built an analysis workflow and learned to write AI skills. Created a custom skill so AI scrapes real sources with verifiable, accessible citations. It gets used.',
+      'Built an analysis workflow and learned to write AI skills. Wrote a custom skill that makes the AI scrape real sources and return verifiable, accessible citations. I still use it in my research.',
   },
   {
     image: placeholderImage('AI Aug 2025'),
@@ -421,7 +386,7 @@ export const milestones: Milestone[] = [
     core: 'AI',
     tags: ['coding workflow'],
     description:
-      'Discovered the OpenCode AI harness and built an AI coding workflow around it, learning to create custom skills, MCPs, plugins, and agents.',
+      'Discovered the OpenCode AI harness and built a coding workflow around it, creating custom skills, MCPs, plugins, and agents.',
   },
   {
     image: placeholderImage('AI Sep 2025'),
@@ -429,7 +394,7 @@ export const milestones: Milestone[] = [
     core: 'AI',
     tags: ['voice agent'],
     description:
-      'Built a dedicated agent for stock opname input: I speak the item, location, and quantity, and the agent enters it into the Apps Script API. Basically a bot.',
+      'Built a voice-driven agent for stock opname input: I speak the item, location, and quantity, and the agent enters them through the Apps Script API.',
   },
   {
     image: placeholderImage('AI Sep 2026'),
@@ -437,7 +402,7 @@ export const milestones: Milestone[] = [
     core: 'AI',
     tags: ['AI workspace'],
     description:
-      'Built an AI workspace with several divisions. The most interesting one is the creative division, which automates content, running on the Hermess harness.',
+      'Built an AI workspace with several divisions. The creative division automates content production and runs on the Hermes harness.',
   },
 ]
 
@@ -445,16 +410,13 @@ export type ExperienceItem = {
   icon: string
   year: string
   name: string
-  /** CV bullets, dipakai CvPaper. Opsional karena education tidak memakainya. */
   bullets?: string[]
 }
 
-/** Order: newest to oldest. Icon = image path (/logos/...) or symbol id in public/icons.svg */
 export const education: ExperienceItem[] = [
   { icon: '/logos/smkn7.png', year: '2019–2022', name: 'Chemical Analysis · SMKN 7 Bandung' },
 ]
 
-/** Order: newest to oldest. Icon = image path (/logos/...) or symbol id in public/icons.svg */
 export const workExperience: ExperienceItem[] = [
   {
     icon: '/logos/biofarma.png',
@@ -487,8 +449,8 @@ export const workExperience: ExperienceItem[] = [
     year: 'Jan–Aug 2023',
     name: 'Packaging Support Operator · PT Bio Farma',
     bullets: [
-      'Built an embalage stock recording system with Excel, VBA, and spreadsheets synced across workers.',
-      'Forecast embalage needs with Python data analysis and produced the report.',
+      'Built a packaging materials stock recording system with Excel, VBA, and spreadsheets synced across workers.',
+      'Forecast packaging materials needs with Python data analysis and produced the report.',
     ],
   },
   {
@@ -511,16 +473,13 @@ export const workExperience: ExperienceItem[] = [
 export type Certification = {
   title: string
   issuer: string
-  /** Image path (/logos/...), sprite id, atau '' untuk monogram inisial */
   logo: string
   issued: string
   credentialId: string
-  /** Link verifikasi, null kalau belum ada */
   url: string | null
   skills: string[]
 }
 
-/** Order: newest to oldest. */
 export const certifications: Certification[] = [
   {
     title: 'Certificate of completion: Claude 101',

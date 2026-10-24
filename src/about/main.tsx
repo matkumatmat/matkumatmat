@@ -9,7 +9,7 @@ import Resume from './section/Resume'
 
 export default function About() {
   return (
-    <main className=" flex flex-col px-6 gap-12 pt-6 py-10">
+    <main className="flex flex-col gap-12 px-4 pt-6 py-10 sm:px-6">
       <Hero />
       <Resume/>
       <Milestone />

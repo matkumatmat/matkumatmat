@@ -9,7 +9,7 @@ const links = [
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-10 border-b border-line bg-canvas/80 backdrop-blur">
-      <div className="mx-auto flex w-full items-center justify-between gap-4 px-6 py-4">
+      <div className="mx-auto flex w-full items-center justify-between gap-4 px-4 py-4 md:px-6">
         <NavLink to="/gallery" className="text-subheading">
           Kaye
         </NavLink>

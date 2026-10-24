@@ -191,7 +191,7 @@ export default function Contact() {
         <span aria-hidden="true" className="h-px flex-1 bg-line" />
       </div>
 
-      <div className="mx-auto mt-10 grid max-w-3xl gap-12 md:grid-cols-2 md:gap-10">
+      <div className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-10">
         <div
           role="group"
           aria-label="Email addresses"

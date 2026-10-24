@@ -31,7 +31,7 @@ function Column({ id, title, items }: { id: string; title: string; items: Experi
       <ul
         aria-labelledby={id}
         tabIndex={0}
-        className="no-scrollbar mt-4 max-h-[360px] divide-y divide-line overflow-y-auto rounded-2xl border border-line bg-surface [mask-image:linear-gradient(to_bottom,black_calc(100%-2.5rem),transparent)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-text"
+        className="mt-4 divide-y divide-line overflow-hidden rounded-2xl border border-line bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-text md:no-scrollbar md:max-h-[360px] md:overflow-y-auto md:[mask-image:linear-gradient(to_bottom,black_calc(100%-2.5rem),transparent)]"
       >
         {items.map((item) => (
           <li
@@ -41,7 +41,7 @@ function Column({ id, title, items }: { id: string; title: string; items: Experi
           >
             <ItemIcon icon={item.icon} label={item.name} />
             <span className="min-w-0">
-              <span className="text-body block truncate font-medium">{item.name}</span>
+              <span className="text-body block font-medium leading-snug">{item.name}</span>
               <span className="mt-0.5 block font-mono text-small text-fg-muted">{item.year}</span>
             </span>
           </li>
@@ -60,7 +60,7 @@ export default function Experience() {
         </h2>
         <span aria-hidden="true" className="h-px flex-1 bg-line" />
       </div>
-      <div className="mt-6 grid gap-6 md:grid-cols-2 md:gap-8">
+      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
         <Column id="experience-education" title="Education" items={education} />
         <Column id="experience-work" title="Work Experience" items={workExperience} />
       </div>

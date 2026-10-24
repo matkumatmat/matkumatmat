@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+trajectory-2026-10-22-222631.json
+.agents/

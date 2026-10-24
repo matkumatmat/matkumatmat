@@ -193,15 +193,15 @@ export default function Hero() {
   return (
     <section
       ref={rootRef}
-      className="relative isolate w-full h-[500px] overflow-hidden rounded-xl md:rounded-2xl bg-brand mb-2"
+      className="relative isolate flex w-full flex-col overflow-hidden rounded-xl bg-brand mb-2 md:block md:h-[500px] md:rounded-2xl"
     >
       <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/45 to-transparent"></div>
 
-      <div className="absolute inset-y-0 right-0 w-[38%] bg-accent"></div>
+      <div className="absolute inset-y-0 right-0 hidden w-[38%] bg-accent md:block"></div>
 
       <FloatingOrnaments />
 
-      <div className="absolute left-8 top-1/2 w-[32%] -translate-y-1/2">
+      <div className="relative z-10 order-1 px-6 pt-8 md:absolute md:left-8 md:top-1/2 md:w-[32%] md:-translate-y-1/2 md:px-0 md:pt-0">
         <p className="flex items-center gap-3">
           <span aria-hidden="true" className="hero-eyebrow-line block h-px w-10 bg-accent" />
           <span className="hero-eyebrow-text text-label uppercase text-accent-text">Portfolio</span>
@@ -232,7 +232,7 @@ export default function Hero() {
             {CORES.map((core, i) => (
               <span
                 key={core.label}
-                className={`hero-core-word text-title absolute inset-0 overflow-hidden whitespace-nowrap text-white opacity-0 ${core.className}`}
+                className={`hero-core-word text-heading sm:text-title absolute inset-0 overflow-hidden whitespace-nowrap text-white opacity-0 ${core.className}`}
               >
                 <Chars label={core.label} withCaret={i === 3} />
               </span>
@@ -241,7 +241,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-panel absolute right-24 top-1/2 w-[20%] -translate-y-1/2">
+      <div className="hero-panel relative z-10 order-3 mt-0 bg-accent px-6 py-6 md:absolute md:right-24 md:top-1/2 md:mt-0 md:w-[20%] md:-translate-y-1/2 md:bg-transparent md:px-0 md:py-0">
         <p className="text-display display-tight text-accent-fg">
           <span ref={counterRef}>01</span>
           <span className="text-title">/04</span>
@@ -274,7 +274,7 @@ export default function Hero() {
       <img
         src={`${import.meta.env.BASE_URL}me-facing-clean.webp`}
         alt="Portrait photo"
-        className="hero-photo absolute -bottom-30 left-[calc(50%-194px)] h-[110%] w-auto object-contain object-bottom"
+        className="hero-photo relative z-10 order-2 mx-auto -my-2 h-[300px] w-auto object-contain object-bottom sm:h-[340px] md:absolute md:-bottom-30 md:left-[calc(50%-194px)] md:z-0 md:mx-0 md:my-0 md:h-[110%]"
       />
     </section>
   )

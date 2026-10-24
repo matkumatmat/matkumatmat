@@ -35,6 +35,11 @@ function snakeOrder<T>(items: T[], columns: number): T[] {
   return rows.flatMap((row, index) => (index % 2 === 1 ? [...row].reverse() : row))
 }
 
+/** Unique stable key: year alone is not unique (two programming items share 2023). */
+function itemKey(item: Milestone): string {
+  return `${item.core}-${item.year}-${milestones.indexOf(item)}`
+}
+
 function MilestoneCard({
   item,
   itemKey,
@@ -113,7 +118,7 @@ export default function Milestone() {
       if (!grid) return
       const rect = grid.getBoundingClientRect()
       const boxes = visible
-        .map((item) => itemRefs.current.get(`${item.core}-${item.year}`)?.getBoundingClientRect())
+        .map((item) => itemRefs.current.get(itemKey(item))?.getBoundingClientRect())
         .filter((box): box is DOMRect => !!box)
       const next: Segment[] = []
       for (let i = 0; i + 1 < boxes.length; i++) {
@@ -154,8 +159,8 @@ export default function Milestone() {
         <h2 className="text-title text-fg">
           3. Milest<span className="bg-accent text-accent-fg">ones</span>
         </h2>
-        <div className="flex min-w-[220px] flex-1 items-center gap-4">
-          <span aria-hidden="true" className="h-px w-8 shrink-0 bg-line" />
+        <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-4 gap-y-3">
+          <span aria-hidden="true" className="hidden h-px w-8 shrink-0 bg-line min-[420px]:block" />
           <div className="flex shrink-0 gap-2" role="group" aria-label="Filter milestones by core">
             {cores.map((core) => {
               const isActive = activeCore === core.id
@@ -188,14 +193,14 @@ export default function Milestone() {
               )
             })}
           </div>
-          <span aria-hidden="true" className="h-px w-8 shrink-0 bg-line" />
+          <span aria-hidden="true" className="hidden h-px w-8 shrink-0 bg-line min-[420px]:block" />
           <p
             aria-live="polite"
-            className="shrink-0 whitespace-nowrap font-mono text-heading uppercase text-fg-muted"
+            className="min-w-0 font-mono text-heading uppercase text-fg-muted"
           >
             {cores.find((core) => core.id === activeCore)?.label ?? 'All'}
           </p>
-          <span aria-hidden="true" className="h-px flex-1 bg-line" />
+          <span aria-hidden="true" className="hidden h-px min-w-8 flex-1 bg-line sm:block" />
         </div>
       </div>
 
@@ -220,12 +225,12 @@ export default function Milestone() {
           ))}
         </svg>
         {ordered.map((item) => {
-          const itemKey = `${item.core}-${item.year}`
+          const key = itemKey(item)
           return (
             <MilestoneCard
-              key={itemKey}
+              key={key}
               item={item}
-              itemKey={itemKey}
+              itemKey={key}
               innerRef={(key, el) => {
                 if (el) itemRefs.current.set(key, el)
                 else itemRefs.current.delete(key)
