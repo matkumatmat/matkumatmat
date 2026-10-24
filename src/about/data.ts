@@ -206,14 +206,14 @@ export const milestones: Milestone[] = [
       'Joined the core hygiene team preparing for the WHO audit, covering cleanliness standards and inspection-day readiness.',
   },
   {
-    image: placeholderImage('warehouse Jul 2025'),
+    image: '/milestones/mup-2.webp',
     year: 'Jul 2025',
     core: 'warehouse',
     tags: ['distributor audit'],
     description: 'Audited the MUP Jakarta distributor warehouse and assessed its readiness.',
   },
   {
-    image: placeholderImage('warehouse Aug 2025'),
+    image: '/milestones/elo-karsa.webp',
     year: 'Aug 2025',
     core: 'warehouse',
     tags: ['distributor audit'],
