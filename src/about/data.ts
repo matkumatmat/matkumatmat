@@ -217,7 +217,14 @@ export const milestones: Milestone[] = [
     year: 'Aug 2025',
     core: 'warehouse',
     tags: ['distributor audit'],
-    description: 'Audited the Elo Karsa and Itama Ranoraya distributor warehouses.',
+    description: 'Audited the Elo Karsa distributor warehouse and assessed its readiness.',
+  },
+  {
+    image: '/milestones/itama-2.webp',
+    year: 'Aug 2025',
+    core: 'warehouse',
+    tags: ['distributor audit'],
+    description: 'Audited the Itama Ranoraya distributor warehouse and assessed its readiness.',
   },
   {
     image: placeholderImage('warehouse Sep 2025'),
